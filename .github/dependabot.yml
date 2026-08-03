@@ -1,9 +1,15 @@
 ﻿version: 2
 updates:
+  # Monitoreo semanal de dependencias de Python (pip)
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
     open-pull-requests-limit: 10
-    assignees:
-      - "Melampe001"
+
+  # Monitoreo semanal de dependencias de GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
