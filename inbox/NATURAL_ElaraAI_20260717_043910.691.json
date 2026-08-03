@@ -1,0 +1,9 @@
+{
+    "status":  "INJECTED_IN_KERNEL",
+    "intent_raw":  "Leer ticks de market_feed.json, ejecutar el Filtro de Kalman y enviar Ã³rden de compra firmada con HMAC a Bybit.",
+    "timestamp":  "2026-07-17 04:39:10.706",
+    "encoding":  "UTF-8_BOM",
+    "sender":  "Tokyo M. (Creador Absoluto)",
+    "target":  "ElaraAI™™™™â„¢",
+    "protocol":  "Gobernanza Humana AsÃ­ncrona mediante Lenguaje Natural Estructurado"
+}

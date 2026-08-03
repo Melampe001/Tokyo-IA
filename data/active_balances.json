@@ -1,0 +1,9 @@
+{
+    "timestamp": "2026-07-20 10:24:58",
+    "bybit_available_usdt": "0.00",
+    "okx_available_usdt": "0.00",
+    "status": "PILOT_MODE_ACTIVE",
+    "api_diagnostic": "BYBIT_CAPA_FISICA_CONEXION_TIMEOUT",
+    "quantum_entropy": "S_min -> 0",
+    "calculated_efficiency": "100+1%"
+}

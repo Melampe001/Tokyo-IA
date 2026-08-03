@@ -1,0 +1,130 @@
+{
+    "known_errors":  [
+                         {
+                             "domain":  "interface",
+                             "error_signature":  "ForegroundColor Gold",
+                             "solution":  "Utilizar secuencias de escape ANSI de 24 bits ($Ese[38;2;212;175;55m) en lugar de cadenas de texto de System.ConsoleColor."
+                         },
+                         {
+                             "domain":  "infrastructure",
+                             "error_signature":  "Permission denied VAULT/LLAVE_SISTEMA.key",
+                             "solution":  "Aislar el archivo en .gitignore y omitir indexaciÃ³n en caliente; el sistema operativo restringe el acceso concurrente directo."
+                         },
+                         {
+                             "domain":  "infrastructure",
+                             "error_signature":  "go : El tÃ©rmino \u0027go\u0027 no se reconoce",
+                             "solution":  "Inyectar dinÃ¡micamente el PATH de instalaciÃ³n de Go de Windows o recurrir a scripts de empaquetado alternos en Python/PowerShell."
+                         },
+                         {
+                             "domain":  "infrastructure",
+                             "error_signature":  "NamedParameterNotFound Start-Process CreateNoWindow",
+                             "solution":  "Windows PowerShell no acepta -CreateNoWindow. Para ejecuciÃ³n invisible usar -WindowStyle Hidden o invocar a travÃ©s del argumento NoNewWindow de parches de bajo nivel."
+                         },
+                         {
+                             "domain":  "infrastructure",
+                             "error_signature":  "NamedParameterNotFound Test-Path -and",
+                             "solution":  "El operador -and es un operador lÃ³gico externo de PowerShell. No debe colocarse dentro de los argumentos de Test-Path. Sintaxis correcta: (Test-Path X) -and (Get-Command Y)."
+                         },
+                         {
+                             "domain":  "infrastructure",
+                             "error_signature":  "cmd-agent : El tÃ©rmino \u0027Enviar-Instruccion-Agente\u0027 no se reconoce",
+                             "solution":  "Las funciones declaradas en scripts hijos se destruyen al finalizar. Se debe forzar el modificador de Ã¡mbito global \u0027function global:Name\u0027 para persistir el canal en la terminal del operador."
+                         },
+                         {
+                             "domain":  "infrastructure",
+                             "error_signature":  "Start-Process : Los parÃ¡metros -NoNewWindow y -WindowStyle no se pueden especificar al mismo tiempo",
+                             "solution":  "Remover -WindowStyle Hidden cuando se utiliza -NoNewWindow. Para Python, usar redirecciÃ³n nula de flujos de salida ejecutando directamente de forma asÃ­ncrona."
+                         },
+                         {
+                             "domain":  "logic",
+                             "error_signature":  "SyntaxError: Non-UTF-8 code starting with \\xae in omega_predictor.py",
+                             "solution":  "Inyectar la cabecera estricta \u0027# -*- coding: utf-8 -*-\u0027 en la primera lÃ­nea de todo script de Python que contenga caracteres de marcas registradas Â®."
+                         },
+                         {
+                             "domain":  "infrastructure",
+                             "error_signature":  "CommandNotFoundException ParserError texto plano en consola",
+                             "solution":  "El operador humano ha inyectado metadatos informativos en el flujo de entrada. Ignorar trazas de texto y mantener el buffer de ejecuciones asÃ­ncronas purificado."
+                         },
+                         {
+                             "domain":  "infrastructure",
+                             "error_signature":  "CommandNotFoundException ParserError texto plano en consola",
+                             "solution":  "El operador humano ha inyectado metadatos informativos en el flujo de entrada. Ignorar trazas de texto y mantener el buffer de ejecuciones asÃ­ncronas purificado."
+                         },
+                         {
+                             "domain":  "infrastructure",
+                             "error_signature":  "DirectoryNotFoundException WriteAllText C:\\WINDOWS\\system32\\telemetry",
+                             "solution":  "El sub-hilo desviÃ³ el contexto a system32. Forzar la concatenaciÃ³n de la constante global \u0027C:\\NULOGIC_CORE\\\u0027 en todas las llamadas de lectura/escritura de las SUITS."
+                         },
+                         {
+                             "domain":  "infrastructure",
+                             "error_signature":  "CommandNotFoundException por inyeccion mixta de componentes informativos",
+                             "solution":  "Purgar el buffer de entrada de la terminal activa, re-anclar la ruta absoluta C:\\NULOGIC_CORE\\ y re-compilar el Bootstrap maestro eliminando cadenas no validas."
+                         },
+                         {
+                             "domain":  "runtime",
+                             "error_signature":  "Congelamiento de hilo por I/O Masivo en bucle for",
+                             "solution":  "Prohibir Add-Content secuencial en bucles de alta densidad. Generar buffers masivos directamente en memoria RAM y realizar escrituras en rÃ¡fagas Ãºnicas."
+                         },
+                         {
+                             "domain":  "runtime",
+                             "error_signature":  "Bloqueo de consola activa por Dot-Sourcing de bucles while true",
+                             "solution":  "Prohibir el uso de \u0027.\u0027 (Dot-Sourcing) para scripts que contengan ciclos infinitos de fondo. Forzar el uso de Start-Process -WindowStyle Hidden de forma asÃ­ncrona pura para salvaguardar el hilo principal del creador."
+                         },
+                         {
+                             "domain":  "infrastructure",
+                             "error_signature":  "ParserError UnexpectedToken por strings de escape encimados en -replace",
+                             "solution":  "Evitar el uso de operadores -replace con rutas complejas de escape. Re-compilar el script Bootstrap de forma directa e Ã­ntegra desde RAM forzando codificaciÃ³n UTF-8 pura."
+                         },
+                         {
+                             "domain":  "logic",
+                             "error_signature":  "JSONDecodeError Expecting value line 1 column 1 char 0 api_credentials.json vacio",
+                             "solution":  "Validar si os.path.getsize(path) \u003e 0 antes de invocar json.load(). Si estÃ¡ vacÃ­o, levantar excepcion controlada y evitar el colapso de los hilos de trading."
+                         },
+                         {
+                             "domain":  "logic",
+                             "error_signature":  "SyntaxError: expected : en trading_signals.py por llaves try catch",
+                             "solution":  "Prohibir el uso de llaves { } para bloques try/except en Python. La sintaxis pura exige dos puntos \u0027:\u0027 e indentaciÃ³n de 4 espacios estrictos."
+                         },
+                         {
+                             "domain":  "logic",
+                             "error_signature":  "Falla detectada por Watchdog Sonar: SyntaxError: expected \u0027:\u0027",
+                             "solution":  "Formatear indentaciÃ³n mediante bloques nativos e inyectar dos puntos obligatorios."
+                         },
+                         {
+                             "domain":  "logic",
+                             "error_signature":  "SyntaxError expected : en omega_predictor.py linea 32",
+                             "solution":  "Purgar llaves de bloque { } en try/catch de Python. Reemplazar obligatoriamente por \u0027try:\u0027 y \u0027except Exception as e:\u0027 con indentacion de 4 espacios puros."
+                         },
+                         {
+                             "domain":  "infrastructure",
+                             "error_signature":  "CommandNotFoundException por inyeccion mixta de componentes informativos",
+                             "solution":  "Purgar el buffer de entrada de la terminal activa, re-anclar la ruta absoluta C:\\NULOGIC_CORE\\ y re-compilar el Bootstrap maestro eliminando cadenas no validas."
+                         },
+                         {
+                             "domain":  "network",
+                             "error_signature":  "HTTP Error 403: Forbidden en Bybit y OKX REST V5",
+                             "solution":  "Los servidores HFT rechazan peticiones con User-Agent vacio o de urllib. Forzar la inyeccion obligatoria de headers de Google Chrome de alta fidelidad en cada urllib.request.Request()."
+                         },
+                         {
+                             "domain":  "network",
+                             "error_signature":  "BYBIT_CAPA_FISICA_CONEXION_TIMEOUT por restricciones geograficas de red",
+                             "solution":  "Habilitar el endpoint alternativo oficial ://bytick.com e incrementar el timeout de urllib a 8 segundos para absorber latencias externas."
+                         },
+                         {
+                             "domain":  "infrastructure",
+                             "error_signature":  "CommandNotFoundException active_balances.json no se reconoce como cmdlet",
+                             "solution":  "El operador ejecutÃ³ un JSON directo. Recordar el uso obligatorio de Get-Content. Mudar peticiones REST bloqueadas de urllib de Python a subprocesos Invoke-RestMethod de Windows para burlar firewalls de ISP."
+                         },
+                         {
+                             "domain":  "infrastructure",
+                             "error_signature":  "CommandNotFoundException purg-core por variable cruzada en WriteAllText",
+                             "solution":  "Corregir el puntero de escritura forzando el mapeo de # -*- coding: utf-8 -*-\n$ErrorActionPreference = \"Stop\"\nSet-Location -Path \"C:\\NULOGIC_CORE\"\n\nfunction global:Invoke-SurgicalRecycler {\n    $TimeStamp = Get-Date -Format \"yyyy-MM-dd HH:mm:ss.fff\"\n    $InitialRAM = [Math]::Round((Get-Process -Id $PID).WorkingSet64 / 1MB, 2)\n    \n    # 1. TRITURACIÃ“N DE BASURA BINARIA EN DISCO (EntropÃ­a S_min -\u003e 0)\n    $TargetTrash = @(\"*.tmp\", \"*.bak\", \"*~*\", \"stress_*.json\", \"leak_*.tmp\")\n    foreach ($Pattern in $TargetTrash) {\n        Get-ChildItem -Path \"C:\\NULOGIC_CORE\\temp\", \"C:\\NULOGIC_CORE\\cache\" -Filter $Pattern -Recurse -ErrorAction SilentlyContinue | ForEach-Object {\n            # Borrado seguro: Escribir bytes nulos antes de eliminar del disco fÃ­sico\n            [System.IO.File]::WriteAllBytes($_.FullName, (New-Object Byte[] 1024))\n            Remove-Item -Path $_.FullName -Force -ErrorAction SilentlyContinue\n        }\n    }\n\n    # 2. TRUNCADO QUIRÃšRGICO DE LOGS Y BUFFERS EXCEDENTES\n    $LogFile = \"C:\\NULOGIC_CORE\\logs\\system.log\"\n    if (Test-Path $LogFile) {\n        if ((Get-Item $LogFile).Length -gt 1MB) {\n            $RotatedName = \"C:\\NULOGIC_CORE\\archive\\system_$(Get-Date -Format \u0027yyyyMMdd_HHmmss\u0027).log\"\n            Move-Item -Path $LogFile -Destination $RotatedName -Force\n            New-Item -ItemType File -Path $LogFile -Force | Out-Null\n        }\n    }\n\n    # 3. RECICLAJE Y RE-UTILIZACIÃ“N DE RECURSOS EN MEMORIA RAM (.NET GARBAGE COLLECTOR)\n    # Fuerza a la mÃ¡quina virtual de PowerShell a liberar hilos muertos y re-mapear buffers\n    [System.GC]::Collect()\n    [System.GC]::WaitForPendingFinalizers()\n    \n    $FinalRAM = [Math]::Round((Get-Process -Id $PID).WorkingSet64 / 1MB, 2)\n    $SavedRAM = [Math]::Round($InitialRAM - $FinalRAM, 2)\n    \n    Write-Output \"[$TimeStamp] [??][TokyoAI™™â„¢Â®] Limpieza completada. RAM inicial: $InitialRAM MB | RAM final: $FinalRAM MB (Reciclado: $SavedRAM MB).\"\n}\n\nRemove-Item alias:purg-core -ErrorAction SilentlyContinue\nNew-Alias -Name \"purg-core\" -Value \"Invoke-SurgicalRecycler\" -Scope \"Global\" -Force en Master_Recycler_Layer.ps1. Declarar el alias \u0027purg-core\u0027 con modificador -Scope Global."
+                         }
+                     ],
+    "last_sync":  "2026-07-17 09:42:45.805",
+    "active_models":  [
+                          "ElaraAI™™™™â„¢.gguf",
+                          "TokyoAI™™â„¢.gguf"
+                      ],
+    "system_status":  "IMMACULATE"
+}

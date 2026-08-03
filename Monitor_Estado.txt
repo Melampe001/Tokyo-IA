@@ -1,0 +1,8 @@
+﻿[STATUS:0x00] | NULOGIC T1 - NODO ACTIVO 24/7
+------------------------------------------
+ACTIVO: BTC/USDT | RIESGO: 3x
+META 24H: ,000 MXN
+ESTADO: AUTÓNOMO - CICLO CERRADO
+------------------------------------------
+[!] El nodo está operando en tiempo real.
+[!] NO CERRAR ESTA VENTANA.

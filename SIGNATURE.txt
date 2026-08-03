@@ -1,0 +1,3 @@
+﻿AUTHOR: José Arturo Orozco Jaime (Melampe001)
+EMAIL: thenewtokyocompany@gmail.com
+STATUS: ARCHITECTURE PROVED 5/5

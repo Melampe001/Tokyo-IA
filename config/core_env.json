@@ -1,0 +1,14 @@
+{
+    "authorized_hardware_uuid":  "2C139576-C3E8-E411-85C7-F0761CBEBD97",
+    "latency_target_ms":  2,
+    "operational_modes":  {
+                              "host_machine":  "Full_Sync_Mode",
+                              "guest_machine":  "Volatile_Sandbox_Mode"
+                          },
+    "cryptography":  {
+                         "auto_bypass_on_failure":  true,
+                         "key_mode":  "Hardware_Symmetric_Inmutable",
+                         "algorithm":  "AES-256-CBC"
+                     },
+    "system_id":  "NULOGIC_CORE_PROD"
+}

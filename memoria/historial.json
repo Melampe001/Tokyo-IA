@@ -1,0 +1,14 @@
+{
+  "descripcion": "Archivo donde se guarda el historial de conversaciones",
+  "memoria_corta": {
+    "sesion_actual": []
+  },
+  "memoria_mediana": {
+    "sesiones": []
+  },
+  "memoria_larga": {
+    "perfil_usuario": {},
+    "temas_importantes": [],
+    "preferencias": []
+  }
+}

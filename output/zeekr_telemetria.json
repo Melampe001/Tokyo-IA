@@ -1,0 +1,15 @@
+{
+    "timestamp": "2026-07-27T07:50:22.412142",
+    "propietario": "Jose Arturo Orozco Jaime",
+    "vehiculo": "Zeekr 001 Flagship (Máximo Equipamiento)",
+    "estado_enlace": "Sincronizado (Red Local / Bluetooth Directo)",
+    "configuracion_hook": "Potencia y Aceleración",
+    "parametros_vitales": {
+        "bateria_porcentaje": 94,
+        "autonomia_restante_km": 580,
+        "temperatura_inversor_c": 33.2,
+        "modo_conduccion": "Performance Sport",
+        "traccion": "AWD Dual Motor (Activo)"
+    },
+    "integridad_sistema": "1000+1 — Óptimo"
+}

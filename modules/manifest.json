@@ -1,0 +1,5 @@
+﻿{
+    "module_registry": "NULOGIC_MODULES_PROD",
+    "isolation_level": "Strict_Sandbox",
+    "active_extensions": []
+}

@@ -1,0 +1,13 @@
+﻿{
+    "governance_id":  "TG_ALPHA_360_PROD",
+    "exchange_limits":  {
+                            "recv_window_ms":  5000,
+                            "min_delay_between_orders_ms":  100,
+                            "max_orders_per_second":  10
+                        },
+    "capital_management":  {
+                               "circuit_breaker_active":  true,
+                               "max_risk_per_trade_percent":  2,
+                               "max_consecutive_losses":  3
+                           }
+}

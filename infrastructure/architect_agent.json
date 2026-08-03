@@ -1,0 +1,10 @@
+{
+    "Scope":  [
+                  "/infrastructure",
+                  "/core",
+                  "/services"
+              ],
+    "Agent":  "Architect_Core",
+    "Status":  "Active",
+    "Auto_Repair_Syntax":  true
+}

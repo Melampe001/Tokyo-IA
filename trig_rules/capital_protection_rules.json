@@ -1,0 +1,14 @@
+{
+    "emergency_actions":  {
+                              "auto_patch":  true,
+                              "on_capital_drop":  "PowerShell -Command \u0027.\\services\\GGUF_Context_Trainer.ps1\u0027; Set-Variable -Name ELARA_STATE -Value \u0027SAFE_MODE\u0027",
+                              "on_health_drop":  "Clear-Cache; Restart-Service -Name ElaraCore -ErrorAction SilentlyContinue"
+                          },
+    "rule_id":  "TR_RISK_001",
+    "metrics_thresholds":  {
+                               "min_capital_mxn":  10000,
+                               "min_health_percentage":  100,
+                               "max_latency_ms":  10
+                           },
+    "target_agent":  "ElaraAI™™™™â„¢"
+}

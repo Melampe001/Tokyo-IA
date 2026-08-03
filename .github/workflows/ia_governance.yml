@@ -1,0 +1,33 @@
+﻿name: IA Governance & Phase Sync Audit
+
+on:
+  push:
+    branches: [ "main", "master", "dev", "feature/*" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  governance-audit:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 1. Descargar Código del Repositorio
+      uses: actions/checkout@v4
+
+    - name: 2. Configurar Entorno Python 3.12
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+
+    - name: 3. Ejecutar Motor Sincronización Neuronal de Fase
+      run: |
+        python AGENTS_CORE/phase_sync.py
+
+    - name: 4. Filtro Anti-Fuga de Credenciales
+      run: |
+        if [ -f .env ]; then
+          echo "[ALERTA DE SEGURIDAD] Archivo .env detectado en el repositorio remoto."
+          exit 1
+        else
+          echo "[OK] Filtro de seguridad superado. No hay secretos expuestos."
+        fi

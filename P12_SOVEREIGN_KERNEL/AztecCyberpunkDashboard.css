@@ -1,0 +1,88 @@
+﻿body {
+  background-color: #050508;
+  color: #00ffcc;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.aztec-cyber-container {
+  padding: 2rem;
+  border: 2px solid #ffb700;
+  background: linear-gradient(135deg, #0a0a12 0%, #150f1e 100%);
+  box-shadow: 0 0 20px rgba(255, 183, 0, 0.2);
+  margin: 20px;
+}
+
+.aztec-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px dashed #00ffcc;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.glyph-symbol {
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px #ffb700;
+}
+
+.title-block h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  color: #ffb700;
+}
+
+.subtitle {
+  margin: 5px 0 0 0;
+  font-size: 0.8rem;
+  color: #a0a0c0;
+}
+
+.status-badge {
+  background: #ffb700;
+  color: #050508;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.cyber-card {
+  background: rgba(10, 10, 20, 0.8);
+  border: 1px solid #00ffcc;
+  padding: 1.5rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.cyber-card:hover {
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.4);
+  transform: translateY(-2px);
+}
+
+.cyber-card h3 {
+  margin-top: 0;
+  font-size: 0.9rem;
+  color: #a0a0c0;
+}
+
+.metric-value {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.neon-cyan { color: #00ffcc; text-shadow: 0 0 8px rgba(0,255,204,0.6); }
+.neon-gold { color: #ffb700; text-shadow: 0 0 8px rgba(255,183,0,0.6); }
+.neon-green { color: #00ff66; text-shadow: 0 0 8px rgba(0,255,102,0.6); }
+
+.card-footer {
+  font-size: 0.75rem;
+  color: #707090;
+}

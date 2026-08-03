@@ -1,0 +1,10 @@
+﻿{
+    "target_platform":  "OKX Trading API",
+    "action":  "Consultar y Hacer Trading",
+    "timestamp":  "2026-07-29 05:07:32",
+    "operator":  "Jose Arturo Orozco Jaime (Tokyo M.)",
+    "project":  "FlaggShip Apps / ZEEKROO1",
+    "status":  "PENDING_IP_WHITELIST_SYNC",
+    "account_mask":  "f3638*****",
+    "sre_diagnostico":  "Error 50102 (Timestamp/IP Mismatch resuelto en infraestructura local)"
+}

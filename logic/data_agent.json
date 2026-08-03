@@ -1,0 +1,10 @@
+{
+    "Scope":  [
+                  "/logic",
+                  "/data",
+                  "/trig_rules"
+              ],
+    "Agent":  "Data_Predictor_Agent",
+    "Human_Verification_Required":  true,
+    "Status":  "Active"
+}

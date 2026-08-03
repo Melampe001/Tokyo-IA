@@ -1,0 +1,46 @@
+﻿# ==============================================================================
+# TRINITY KUBERNETES DEPLOYMENT MANIFEST (AZURE AKS / AWS EKS / GCP GKE)
+# ==============================================================================
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flaggship-atomized-core
+  namespace: nulogic-system
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: flaggship-engine
+  template:
+    metadata:
+      labels:
+        app: flaggship-engine
+    spec:
+      containers:
+      - name: core-engine
+        image: flaggship/nulogic-core:latest
+        ports:
+        - containerPort: 8080
+        env:
+        - name: TRINITY_SYNC
+          value: "ACTIVE"
+        resources:
+          limits:
+            cpu: "2"
+            memory: "4Gi"
+          requests:
+            cpu: "500m"
+            memory: "512Mi"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: flaggship-commercial-service
+  namespace: nulogic-system
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 8080
+  selector:
+    app: flaggship-engine

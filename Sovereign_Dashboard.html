@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>NULOGIC_CORE // Panel Soberano</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+:root{
+  --void:#030308;
+  --void2:#07070f;
+  --purple:#b026ff;
+  --cyan:#00f0ff;
+  --ghost:#e6e6ff;
+  --ok:#12ffb0;
+  --danger:#ff2266;
+}
+body{
+  background:var(--void);color:var(--ghost);font-family:'Courier New', monospace;
+  margin:0;padding:20px;display:grid;grid-template-columns:1fr 1fr;gap:20px;
+}
+.panel{
+  background:var(--void2);border:1px solid rgba(0,240,255,0.3);border-radius:6px;padding:20px;
+  box-shadow:0 0 15px rgba(0,240,255,0.05);
+}
+.full{grid-column:span 2;}
+h1, h2{color:var(--cyan);text-transform:uppercase;margin-top:0;font-size:1.2rem;}
+h1{color:#ffff00;border-bottom:1px dashed rgba(255,255,0,0.3);padding-bottom:10px;}
+.status-badge{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--danger);}
+.status-badge.online{background:var(--ok);box-shadow:0 0 8px var(--ok);}
+.log-box{background:#010103;border:1px solid #1a1a2e;height:140px;overflow-y:auto;padding:10px;font-size:0.8rem;color:#a0a0c0;}
+</style>
+<script>
+const API = "http://127.0.0.1:8899/api/status";
+
+async function checkStatus() {
+    try {
+        let res = await fetch(API);
+        if(!res.ok) throw new Error("HTTP error");
+        let data = await res.json();
+        document.getElementById('lbl-state').innerText = data.status;
+        document.getElementById('dot-state').className = "status-badge online";
+        document.getElementById('lbl-base').innerText = data.base;
+        addLog("Telemetría sincronizada correctamente desde el disco local.", "ok");
+    } catch(e) {
+        document.getElementById('lbl-state').innerText = "SIN CONEXIÓN";
+        document.getElementById('dot-state').className = "status-badge";
+        addLog("Fallo de enlace con el servidor: " + e.message, "danger");
+    }
+}
+
+function addLog(msg, type) {
+    let box = document.getElementById('log-stream');
+    let time = new Date().toTimeString().split(' ')[0];
+    box.innerHTML += `<div style="color:${type==='ok'?'var(--ok)':'var(--danger)'}">[${time}] ${msg}</div>`;
+    box.scrollTop = box.scrollHeight;
+}
+
+setInterval(checkStatus, 3000);
+window.onload = checkStatus;
+</script>
+</head>
+<body>
+
+<div class="panel full">
+    <h1>NULOGIC_CORE // Rascacielos Digital (Piso 2)</h1>
+    <div style="font-size:0.85rem; color:#888;">Propietario Exclusivo: Jose Arturo Orozco Jaime &bull; Ley 1000+1</div>
+</div>
+
+<div class="panel">
+    <h2>Estado del Kernel <span id="dot-state" class="status-badge"></span></h2>
+    <div style="margin-top:10px; font-size:0.9rem;">
+        <div>Estado: <b id="lbl-state" style="color:var(--cyan);">Verificando...</b></div>
+        <div style="margin-top:6px;">Ruta Base: <span id="lbl-base" style="color:#aaa; font-size:0.8rem;">...</span></div>
+    </div>
+</div>
+
+<div class="panel">
+    <h2>Canal de Comunicación 360°</h2>
+    <div style="text-align:center; padding:20px; color:var(--purple); font-size:0.9rem;">
+        [ Enlace Activo // Puerto 8899 ]
+    </div>
+</div>
+
+<div class="panel full">
+    <h2>Caja Negra / Auditoría en Vivo</h2>
+    <div class="log-box" id="log-stream"></div>
+</div>
+
+</body>
+</html>

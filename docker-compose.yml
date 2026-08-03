@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  elara_engine:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: elara_ai_core
+    restart: always
+    environment:
+      - ENVIRONMENT=production
+      - OWNER=Jose_Arturo_Orozco_Jaime
+      - PYTHONUTF8=1
+    volumes:
+      - C:/TokyoApps:/app/corp_matrix
+    ports:
+      - "8080:8080"
+    depends_on:
+      - redis_cache
+      - postgres_db
+
+  redis_cache:
+    image: redis:7.2-alpine
+    container_name: tokyo_redis_hft
+    restart: always
+    command: redis-server --appendonly yes --requirepass TK-ATOMIC-REDIS-360
+    ports:
+      - "6379:6379"
+
+  postgres_db:
+    image: postgres:16-alpine
+    container_name: tokyo_postgres_ssot
+    restart: always
+    environment:
+      POSTGRES_USER: tokyo_architect
+      POSTGRES_PASSWORD: TK-ATOMIC-POSTGRES-360
+      POSTGRES_DB: tokyo_vault_finance
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+volumes:
+  postgres_data:
+    driver: local

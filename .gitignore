@@ -1,0 +1,18 @@
+﻿# NULOGIC CORE - GITIGNORE
+.env
+*.env
+.env.*
+secrets/
+app_secrets/
+*.key
+*.pem
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.vscode/
+.idea/
+*.log
+sandbox_env/
+node_modules/

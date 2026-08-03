@@ -1,0 +1,26 @@
+﻿{
+    "merchant_identity": "Jose Arturo Orozco Jaime (Tokyo M.) | FlaggShip Apps",
+    "gateway_status": "OPTIMIZED_FOR_CURRENT_MARKET",
+    "models": {
+        "subscription": {
+            "tier_1_pro": { 
+                "price_usd": 49.99, 
+                "billing_cycle": "monthly", 
+                "target": "Professional Developers & Edge Users",
+                "features": ["Elara Analytics Core", "Base Automation Suite"] 
+            },
+            "tier_2_enterprise": { 
+                "price_usd": 199.99, 
+                "billing_cycle": "monthly", 
+                "target": "Enterprise Fleets & Connected Hardware",
+                "features": ["Full Trinity Multi-Cloud Access", "Zeekr Telemetry Bridge", "Unlimited API Calls"] 
+            }
+        },
+        "pay_per_use": {
+            "api_call_rate_usd": 0.0015,
+            "telemetry_packet_rate_usd": 0.0060
+        }
+    },
+    "payment_gateway_provider": "Stripe Live",
+    "compliance": "Trinity Enterprise Compliant"
+}
