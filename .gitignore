@@ -16,3 +16,4 @@ __pycache__/
 *.log
 sandbox_env/
 node_modules/
+.env
