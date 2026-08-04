@@ -1,5 +1,5 @@
 ﻿# ===========================================================
-# NULOGIC CORE :: SYSTEM HEALTH CHECK SCRIPT
+# NULOGIC CORE :: SYSTEM HEALTH CHECK SCRIPT WITH DISCORD ALERTS
 # ===========================================================
 $ErrorActionPreference = "SilentlyContinue"
 
@@ -118,5 +118,41 @@ if ($Failed -eq 0) {
     Write-Host "`n  ESTADO GENERAL: SISTEMA OPERATIVO Y SALUDABLE 🚀" -ForegroundColor Green
 } else {
     Write-Host "`n  ESTADO GENERAL: SE REQUIERE ATENCIÓN EN ELEMENTOS CRÍTICOS ⚠️" -ForegroundColor Red
+    
+    # NOTIFICACIÓN DISCORD EN CASO DE FALLO
+    if (Test-Path ".env") {
+        $Match = Get-Content ".env" | Select-String -Pattern "^DISCORD_WEBHOOK_URL=(.+)"
+        if ($Match) {
+            $WebhookUrl = $Match.Matches.Groups[1].Value.Trim()
+            if ($WebhookUrl -and $WebhookUrl -notlike "*your_*_here*") {
+                Write-Host "`n[DISCORD] Enviando alerta de bloqueo a Discord..." -ForegroundColor Red
+                $Payload = [PSCustomObject]@{
+                    username = "NULOGIC CORE Guard"
+                    content = "🚨 **BLOQUEO DE SEGURIDAD PRE-PUSH**"
+                    embeds = @(
+                        [PSCustomObject]@{
+                            title = "Health Check Fallido :: NULOGIC_CORE"
+                            description = "El envío a GitHub fue bloqueado automáticamente debido a fallos críticos en el repositorio."
+                            color = 15158332
+                            fields = @(
+                                [PSCustomObject]@{ name = "Pruebas OK"; value = "$Passed"; inline = $true },
+                                [PSCustomObject]@{ name = "Advertencias"; value = "$Warnings"; inline = $true },
+                                [PSCustomObject]@{ name = "Fallos Críticos"; value = "$Failed"; inline = $true }
+                            )
+                        }
+                    )
+                } | ConvertTo-Json -Depth 4
+                
+                try {
+                    Invoke-RestMethod -Uri $WebhookUrl -Method Post -ContentType "application.json" -Body $Payload
+                    Write-Host "  [OK] Alerta emitida exitosamente al canal de Discord." -ForegroundColor Green
+                } catch {
+                    Write-Host "  [WARN] No se pudo conectar con Discord Webhook." -ForegroundColor Yellow
+                }
+            }
+        }
+    }
 }
 Write-Host "===========================================================`n"
+
+exit $Failed
