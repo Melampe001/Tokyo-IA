@@ -1,6 +1,6 @@
 ﻿"""
-NULOGIC CORE :: PHASE SYNCHRONIZATION ENGINE v1.1.0
-Orquestador Armónico Multiagente por Pulsos de 360°.
+NULOGIC CORE :: PHASE SYNCHRONIZATION ENGINE v1.2.0
+Orquestador Armónico Multiagente por Pulsos de 360° con soporte automatizado para .env.
 """
 import os
 import sys
@@ -8,6 +8,15 @@ import time
 import json
 import logging
 from typing import Dict, Any
+
+# Carga automática de variables de entorno desde el archivo .env
+try:
+    from dotenv import load_dotenv
+    # Se busca el archivo .env en la raíz del proyecto NULOGIC_CORE
+    env_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), '.env')
+    load_dotenv(dotenv_path=env_path)
+except ImportError:
+    pass
 
 from trading_agent import TradingAgent
 from content_agent import ContentMetricsAgent
