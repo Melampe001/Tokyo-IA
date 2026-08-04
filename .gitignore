@@ -17,3 +17,5 @@ __pycache__/
 sandbox_env/
 node_modules/
 .env
+
+.env
