@@ -9,7 +9,6 @@ import json
 import logging
 from typing import Dict, Any
 
-# Importar Agentes Especializados
 from trading_agent import TradingAgent
 from content_agent import ContentMetricsAgent
 from devops_agent import GitDevOpsAgent
@@ -27,12 +26,11 @@ class PhaseSyncEngine:
         self.content_agent = ContentMetricsAgent()
         self.devops_agent = GitDevOpsAgent()
 
-    def run_full_cycle() -> Dict[str, Any]:
+    def run_full_cycle(self) -> Dict[str, Any]:
         logging.info("Starting Full 360° Multi-Agent Neural Phase Cycle...")
         cycle_report = {}
 
-        # FASE 0° :: AUDITORÍA, LECTURA Y CAPTURA
-        logging.info("================ FASE 0° (Inspiración / Captura) ================")
+        logging.info("================ FASE 0° (Inspiracion / Captura) ================")
         r0 = {
             "trading": self.trading_agent.on_phase_0({}),
             "content": self.content_agent.on_phase_0({}),
@@ -41,8 +39,7 @@ class PhaseSyncEngine:
         cycle_report["phase_0_capture"] = r0
         time.sleep(0.05)
 
-        # FASE 90° :: CONSENSO, CÁLCULO Y EVALUACIÓN
-        logging.info("================ FASE 90° (Consenso / Análisis) ================")
+        logging.info("================ FASE 90° (Consenso / Analisis) ================")
         r90 = {
             "trading": self.trading_agent.on_phase_90({}),
             "content": self.content_agent.on_phase_90({}),
@@ -51,8 +48,7 @@ class PhaseSyncEngine:
         cycle_report["phase_90_consensus"] = r90
         time.sleep(0.05)
 
-        # FASE 180° :: EJECUCIÓN, DESPLIEGUE Y ACCIÓN
-        logging.info("================ FASE 180° (Expiración / Acción) ================")
+        logging.info("================ FASE 180° (Expiracion / Accion) ================")
         r180 = {
             "trading": self.trading_agent.on_phase_180({}),
             "content": self.content_agent.on_phase_180({}),
@@ -61,8 +57,7 @@ class PhaseSyncEngine:
         cycle_report["phase_180_execution"] = r180
         time.sleep(0.05)
 
-        # FASE 270° :: ESTABILIZACIÓN, LIMPIEZA Y REGISTRO
-        logging.info("================ FASE 270° (Estabilización / Cierre) ================")
+        logging.info("================ FASE 270° (Estabilizacion / Cierre) ================")
         r270 = {
             "trading": self.trading_agent.on_phase_270({}),
             "content": self.content_agent.on_phase_270({}),
@@ -82,5 +77,5 @@ class PhaseSyncEngine:
 if __name__ == "__main__":
     engine = PhaseSyncEngine()
     summary = engine.run_full_cycle()
-    print("\n--- TELEMETRÍA DE EJECUCIÓN MULTIAGENTE ---")
+    print("\n--- TELEMETRIA DE EJECUCION MULTIAGENTE ---")
     print(json.dumps(summary, indent=2, ensure_ascii=False))
