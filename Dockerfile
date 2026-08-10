@@ -1,28 +1,33 @@
-﻿# Standard Enterprise Base Image para aplicaciones híbridas de IA y Trading
-FROM python:3.12-slim
+﻿# ===========================================================
+# RascacielosDigital_UniverseAtom® :: DOCKERFILE OPTIMIZADO
+# ===========================================================
+FROM python:3.11-slim AS base
 
-# Definir variables de entorno de producción inmunes al colapso entrópico
-ENV PYTHONDONTWRITEBYTECODE=1
-ENV PYTHONUNBUFFERED=1
-ENV ENVIRONMENT=production
+# Variables de entorno para Python
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONPATH=/app
 
 WORKDIR /app
 
-# Instalar dependencias del sistema requeridas para alta concurrencia
+# Instalar dependencias del sistema requeridas
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    build-essential \
-    sqlite3 \
+    curl \
+    ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
-# Copiar manifiestos de dependencias e instalar con optimización de caché
+# Instalar dependencias de Python
 COPY requirements.txt .
-RUN pip install --no-cache-dir --upgrade pip \
-    && pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
 
-# Copiar la suite completa (Nucleo, Memoria, Interfaces TypeScript)
-COPY . .
+# Copiar el código fuente
+COPY AGENTS_CORE /app/AGENTS_CORE
+COPY .env.example /app/.env.example
 
-EXPOSE 8080
+# Diagnóstico de Salud interno del Contenedor
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+    CMD python -c "import urllib.request, os; exit(0 if os.path.exists('AGENTS_CORE/phase_sync.py') else 1)"
 
-print("🔒 [TokyoAI] Contenedor de producción inicializado con éxito.")
-CMD ["python", "main.py"]
+# Comando por defecto: Ejecutar el orquestador PhaseSync
+CMD ["python", "AGENTS_CORE/phase_sync.py"]
