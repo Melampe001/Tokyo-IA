@@ -1,0 +1,53 @@
+﻿name: RascacielosDigital CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  quality-and-security:
+    name: Health Check, Security Scan & Jest Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Clonar Repositorio
+        uses: actions/checkout@v4
+
+      - name: 🟢 Configurar Node.js v24.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24.x'
+          cache: 'npm'
+
+      - name: 📦 Instalación Limpia de Dependencias
+        run: npm ci
+
+      - name: 🩺 Ejecutar Health Check de Arquitectura
+        run: node index.js --health-check
+
+      - name: 🛡️ Escaneo de Seguridad (Security Agent)
+        run: node agents/security-agent.js --scan
+
+      - name: 🧪 Ejecutar Suite de Pruebas Jest
+        run: npm test -- --ci --silent
+
+  deploy-production:
+    name: Despliegue Automatizado a Producción
+    needs: quality-and-security
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Clonar Repositorio
+        uses: actions/checkout@v4
+
+      - name: 🟢 Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24.x'
+
+      - name: 🚀 Ejecutar Deploy Agent
+        env:
+          VIP_LICENSE_KEY: ${{ secrets.VIP_LICENSE_KEY }}
+          DEPLOY_ENV: 'production'
+        run: node agents/deploy-agent.js --prod

@@ -1,0 +1,7 @@
+﻿{
+  "exchange": "OKX",
+  "min_notional_usd": 1.00,
+  "allow_paper_fallback": true,
+  "leverage_default": 1,
+  "assets_monitored": ["USDC", "USDT", "BTC", "ETH"]
+}
