@@ -1,0 +1,71 @@
+﻿name: NULOGIC CORE :: Cloud Deployment & Registry
+
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  build-and-publish-cloud:
+    name: Build & Publish Docker Image to GHCR
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to GitHub Container Registry (GHCR)
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract Metadata for Docker
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ghcr.io/${{ github.repository }}
+          tags: |
+            type=raw,value=latest
+            type=sha,format=short
+
+      - name: Build and Push Docker Image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+
+  deploy-remote-server:
+    name: Deploy to Remote Cloud Instance
+    needs: build-and-publish-cloud
+    runs-on: ubuntu-latest
+    if: secrets.SSH_HOST != ''
+
+    steps:
+      - name: SSH Remote Deployment
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            echo "Conectando al servidor remoto..."
+            docker pull ghcr.io/${{ github.repository }}:latest
+            docker stop nulogic_core_engine || true
+            docker rm nulogic_core_engine || true
+            docker run -d \
+              --name nulogic_core_engine \
+              --restart unless-stopped \
+              --env-file /etc/nulogic/.env \
+              ghcr.io/${{ github.repository }}:latest
+            echo "[OK] Despliegue en la nube completado con éxito."
