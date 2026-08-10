@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html>
+<head><title>FlaggShip Command Center</title>
+<style>
+    body { background: #000; color: #0f0; font-family: monospace; }
+    button { background: #222; color: #0f0; border: 1px solid #0f0; padding: 20px; margin: 10px; cursor: pointer; }
+    button:hover { background: #0f0; color: #000; }
+</style>
+</head>
+<body>
+    <h1>Tokyo Master: FlaggShip Control Panel</h1>
+    <button onclick="fetch('/api/compile')">COMPILAR SISTEMA</button>
+    <button onclick="fetch('/api/scale')">ESCALAR NODOS</button>
+    <button onclick="fetch('/api/deploy')">DESPLEGAR AGENTES</button>
+    <div id='log'>Consola: Esperando orden...</div>
+</body>
+</html>
