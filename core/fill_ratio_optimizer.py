@@ -1,4 +1,5 @@
-﻿import ccxt, json, uuid, time, sys, io, os
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import ccxt, json, uuid, time, sys, io, os
 
 # SSSoT: Alineación de Rutas Genómicas
 ruta_raiz = r"E:\TOKYOAPPS_UNIVERSE\01_ACTIVE\NULOGIC_CORE"
@@ -51,3 +52,4 @@ def optimizar_fill_ratio():
 
 if __name__ == "__main__":
     optimizar_fill_ratio()
+

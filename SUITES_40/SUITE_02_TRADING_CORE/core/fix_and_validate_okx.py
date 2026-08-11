@@ -1,4 +1,5 @@
-﻿import os, json
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import os, json
 
 credential_paths = [
     "okx_credentials.json",
@@ -61,3 +62,4 @@ else:
         print(f"Total Equivalente USD: ${balance.get('total', {}).get('USDT', balance.get('total', {}).get('USD', 'N/A'))}")
     except Exception as e:
         print(f"\n[ERROR DE CONEXIÓN CON OKX]: {str(e)}")
+

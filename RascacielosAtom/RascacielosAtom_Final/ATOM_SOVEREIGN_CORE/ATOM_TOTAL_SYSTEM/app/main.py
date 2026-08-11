@@ -1,4 +1,5 @@
-﻿from fastapi import FastAPI, Request
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+from fastapi import FastAPI, Request
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from fastapi.middleware.cors import CORSMiddleware
@@ -24,3 +25,4 @@ db = elara.exe_secure("vault/atom_sovereign.db", commitdb=True, key_path="vault/
 async def root(request: Request):
     balance = db.get("global_balance") or 0.0
     return templates.TemplateResponse("panel.html", {"request": request, "balance": f"{balance:,.2f}"})
+

@@ -1,4 +1,5 @@
-﻿from fastapi import APIRouter, BackgroundTasks, HTTPException
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+from fastapi import APIRouter, BackgroundTasks, HTTPException
 import elara
 import time
 
@@ -24,3 +25,4 @@ async def retirar(monto: float):
         raise HTTPException(status_code=400, detail="Fondos insuficientes en la Bóveda P7")
     db.set("global_balance", saldo - monto)
     return {"status": "Retiro Exitoso", "nuevo_saldo": db.get("global_balance")}
+

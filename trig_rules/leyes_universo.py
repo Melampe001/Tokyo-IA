@@ -1,4 +1,5 @@
-﻿import math
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import math
 import random
 
 class EvaluadorEvolutivoHFT:
@@ -21,3 +22,4 @@ class EvaluadorEvolutivoHFT:
         norma_b = math.sqrt(sum(b ** 2 for b in vector_maestro))
         if norma_a == 0 or norma_b == 0: return 0.0
         return producto_punto / (norma_a * norma_b)
+

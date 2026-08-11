@@ -1,4 +1,5 @@
-﻿from pathlib import Path
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+from pathlib import Path
 import time
 
 def calcular_gran_numero_soberano():
@@ -17,3 +18,4 @@ def calcular_gran_numero_soberano():
 
 if __name__ == "__main__":
     calcular_gran_numero_soberano()
+

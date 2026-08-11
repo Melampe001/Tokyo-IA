@@ -1,4 +1,5 @@
-﻿import os, json, ccxt
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import os, json, ccxt
 
 def sutura_autenticacion_segura():
     cred_path = r"E:\TOKYOAPPS_UNIVERSE\01_ACTIVE\NULOGIC_CORE\SUITES_40\SUITE_02_TRADING_CORE\okx_credentials.json"
@@ -46,3 +47,4 @@ def sutura_autenticacion_segura():
 
 if __name__ == "__main__":
     sutura_autenticacion_segura()
+

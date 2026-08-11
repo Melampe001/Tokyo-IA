@@ -1,4 +1,5 @@
-﻿import ccxt, json, os, sys, io
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import ccxt, json, os, sys, io
 from core.estado_kernel import EstadoKernel
 
 # Sello de Verdad: UTF-8 puro
@@ -34,3 +35,4 @@ def ejecutar_disparo_001():
 
 if __name__ == "__main__":
     ejecutar_disparo_001()
+

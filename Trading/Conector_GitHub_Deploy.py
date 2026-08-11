@@ -1,4 +1,5 @@
-﻿import os
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import os
 import json
 import logging
 import time
@@ -27,3 +28,4 @@ def liquidacion_nodos_emergencia():
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, format='[%(asctime)s] [%(levelname)s] %(message)s')
     liquidacion_nodos_emergencia()
+

@@ -1,4 +1,5 @@
-﻿import asyncio
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import asyncio
 import logging
 import sys
 import time
@@ -47,3 +48,4 @@ async def main():
 if __name__ == "__main__":
     try: asyncio.run(main())
     except KeyboardInterrupt: pass
+

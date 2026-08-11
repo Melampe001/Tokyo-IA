@@ -1,4 +1,5 @@
-﻿import ccxt, json, os, sys, io
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import ccxt, json, os, sys, io
 sys.path.append(r"E:\TOKYOAPPS_UNIVERSE\01_ACTIVE\NULOGIC_CORE")
 from core.estado_kernel import EstadoKernel
 
@@ -43,3 +44,4 @@ def ejecutar_auditoria_total(ip_detectada):
 
 if __name__ == "__main__":
     ejecutar_auditoria_total("2806:261:b400:87a8:a137:4097:b5ea:66ec")
+

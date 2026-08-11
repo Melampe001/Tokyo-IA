@@ -1,4 +1,5 @@
-﻿from http.server import HTTPServer, SimpleHTTPRequestHandler
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+from http.server import HTTPServer, SimpleHTTPRequestHandler
 import os
 
 class DashboardHandler(SimpleHTTPRequestHandler):
@@ -27,3 +28,4 @@ if __name__ == "__main__":
     server = HTTPServer(('localhost', 8501), DashboardHandler)
     print("[📊] Dashboard Web Activo en http://localhost:8501")
     server.serve_forever()
+

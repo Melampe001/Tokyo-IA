@@ -1,10 +1,7 @@
-﻿*.db
+﻿# Tokyo OS - Exclusiones de Seguridad Corporativa
+database/Tokyo_001.db
 *.log
-app_secrets/
-config/credentials.json
-okx_credentials.json
-alpha_credentials.json
-__pycache__/
 .env
-node_modules/
+__pycache__/
 *.pyc
+.DS_Store

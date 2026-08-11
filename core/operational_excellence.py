@@ -1,4 +1,5 @@
-﻿import ccxt, json, uuid, time, sys, io, os
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import ccxt, json, uuid, time, sys, io, os
 
 # [💎] SUTURA DE RUTA (SSoT): Asegura que Python reconozca la raíz del rascacielos
 ruta_raiz = r"E:\TOKYOAPPS_UNIVERSE\01_ACTIVE\NULOGIC_CORE"
@@ -50,3 +51,4 @@ def activar_excelencia_operacional():
 
 if __name__ == "__main__":
     activar_excelencia_operacional()
+

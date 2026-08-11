@@ -1,3 +1,4 @@
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
 import time, threading
 from core_db import init_db, log_event
 from modules_suite import fetch_okx_market, fetch_bybit_liquidity, check_github_status

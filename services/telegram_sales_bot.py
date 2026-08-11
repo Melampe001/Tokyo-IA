@@ -1,4 +1,5 @@
-﻿import os
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import os
 import sys
 import logging
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
@@ -109,3 +110,4 @@ if __name__ == '__main__':
         app.run_polling()
     else:
         print("[⚠️ ATENCIÓN] Configura TELEGRAM_BOT_TOKEN para encender el bot.")
+

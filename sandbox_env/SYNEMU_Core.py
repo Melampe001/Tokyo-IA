@@ -1,4 +1,5 @@
-﻿import os
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import os
 import random
 import logging
 
@@ -28,3 +29,4 @@ if __name__ == "__main__":
     sim = SynEmuSimulator()
     res = sim.ejecutar_estres_hft_simulado()
     print(f"[SYNEMU] Capa Emuladora Activa: {res['estado']} | Spread: {res['spread_detectado']} | Evidencias NTFS: {res['ataques_repelidos_ntfs']}")
+

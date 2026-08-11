@@ -1,3 +1,4 @@
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
 import os, sys
 
 # SOLUCIÓN CRÍTICA: Inyectar la raíz del proyecto en el path de Python para evitar ModuleNotFoundError

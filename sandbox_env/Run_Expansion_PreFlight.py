@@ -1,4 +1,5 @@
-﻿import sys
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import sys
 import os
 from PreFlight_Core import PreFlightOrchestrator
 
@@ -13,3 +14,4 @@ if __name__ == "__main__":
     codigo_dinamico = f"{codigo}\n# LATIDO_SINCRO = 153400\n"
     print("[*] Ejecutando simulación estática definitiva en jaula de arena...")
     orquestador.validar_y_optimizar("Conector_Expansion_Hexagonal_V2", codigo_dinamico)
+

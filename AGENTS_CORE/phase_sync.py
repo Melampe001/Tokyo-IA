@@ -1,4 +1,5 @@
-﻿"""
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+"""
 NULOGIC CORE :: PHASE SYNCHRONIZATION ENGINE v1.2.0
 Orquestador Armónico Multiagente por Pulsos de 360° con soporte automatizado para .env.
 """

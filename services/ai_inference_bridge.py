@@ -1,4 +1,5 @@
-﻿import urllib.request
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import urllib.request
 import json
 
 def query_local_ai(prompt, model="mistral"):
@@ -14,3 +15,4 @@ def query_local_ai(prompt, model="mistral"):
 
 if __name__ == "__main__":
     print("[🧠] AI Bridge Local Creado y Preparado.")
+

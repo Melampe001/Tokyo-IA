@@ -1,4 +1,5 @@
-﻿import os, json, hmac, hashlib, base64, time, requests
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import os, json, hmac, hashlib, base64, time, requests
 
 try:
     with open("okx_credentials.json", "r", encoding="utf-8") as f:
@@ -56,3 +57,4 @@ try:
 
 except Exception as e:
     print(f"\n[ERROR CRÍTICO] {str(e)}")
+

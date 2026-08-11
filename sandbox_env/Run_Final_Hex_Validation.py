@@ -1,4 +1,5 @@
-﻿import os
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import os
 import time
 from PreFlight_Core import PreFlightOrchestrator
 
@@ -26,3 +27,4 @@ print('[RESEND MAIL HFT] Servicio de mensajería listo.')
 print("[*] Iniciando simulación definitiva sin persistencia de caché...")
 orquestador.validar_y_optimizar(f"Conector_GitHub_Deploy_{timestamp_burbuja}", codigo_git)
 orquestador.validar_y_optimizar(f"Conector_Resend_Email_{timestamp_burbuja}", codigo_resend)
+

@@ -1,3 +1,4 @@
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
 import shutil, os
 from core_db import log_event
 

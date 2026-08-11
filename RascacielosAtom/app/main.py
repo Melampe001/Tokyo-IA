@@ -1,4 +1,5 @@
-﻿import asyncio
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import asyncio
 import random
 from datetime import datetime
 from fastapi import FastAPI, Request
@@ -58,3 +59,4 @@ async def read_root(request: Request):
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
+

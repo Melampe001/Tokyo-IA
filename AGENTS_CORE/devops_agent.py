@@ -1,4 +1,5 @@
-﻿"""
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+"""
 NULOGIC CORE :: AGENTE DE GIT & DEVOPS
 Auditoría de Repositorios, Tests y Gobernanza IA.
 """

@@ -1,1 +1,2 @@
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
 from . import nexus, optimization

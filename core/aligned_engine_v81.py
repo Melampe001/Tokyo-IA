@@ -1,4 +1,5 @@
-﻿import sys, os, time, gc, uuid, json, ccxt
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import sys, os, time, gc, uuid, json, ccxt
 # [💎] SSoT: Alineación de Rutas Absolutas para evitar Namespace Shadowing
 ruta_raiz = r"E:\TOKYOAPPS_UNIVERSE\01_ACTIVE\NULOGIC_CORE"
 if ruta_raiz not in sys.path: sys.path.insert(0, ruta_raiz)
@@ -40,3 +41,4 @@ def ejecutar_alineacion_soberana():
 
 if __name__ == "__main__":
     ejecutar_alineacion_soberana()
+

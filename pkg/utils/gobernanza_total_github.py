@@ -1,3 +1,4 @@
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
 import os
 import subprocess
 import datetime
@@ -67,4 +68,5 @@ with open(log_path, "a", encoding="utf-8") as log:
     log.write(f"[END] --- Fin del ciclo global multirepositorio ---\n")
 print("==============================================================================")
 print("ðŸ PROTOCOLO CONCLUIDO: El 100% de tus repositorios estÃ¡n bajo gobernanza automatizada.")
+
 

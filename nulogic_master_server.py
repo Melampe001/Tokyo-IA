@@ -1,4 +1,5 @@
-﻿#!/usr/bin/env python3
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+#!/usr/bin/env python3
 """
 NULOGIC_CORE — Servidor Maestro con Mente Sistémica y Agentes GGUF
 Propietario: Jose Arturo Orozco Jaime

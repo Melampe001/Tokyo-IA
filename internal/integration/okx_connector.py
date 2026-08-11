@@ -1,3 +1,4 @@
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
 import os
 import sys
 import time
@@ -61,3 +62,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+

@@ -1,4 +1,5 @@
-﻿# ============================================================
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+# ============================================================
 # memoria_larga.py - MEMORIA A LARGO PLAZO
 # ============================================================
 # QUE HACE: Guarda lo MÃS IMPORTANTE de forma permanente.
@@ -38,3 +39,4 @@ class MemoriaLarga:
         No todo se guarda, igual que el cerebro humano.
         """
         pass
+

@@ -1,4 +1,5 @@
-﻿# FlaggShip Apps - Global Payment Webhook Handler
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+# FlaggShip Apps - Global Payment Webhook Handler
 import json
 
 def process_incoming_transaction(user_id, model, amount):
@@ -14,3 +15,4 @@ def process_incoming_transaction(user_id, model, amount):
 
 if __name__ == "__main__":
     process_incoming_transaction("user_demo_01", "subscription_pro", 49.99)
+

@@ -1,4 +1,5 @@
-﻿import ccxt, json, os, sys, io
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import ccxt, json, os, sys, io
 from core.estado_kernel import EstadoKernel
 
 def aplicar_sutura_firma():
@@ -40,3 +41,4 @@ def aplicar_sutura_firma():
 
 if __name__ == "__main__":
     aplicar_sutura_firma()
+

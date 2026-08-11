@@ -1,4 +1,5 @@
-﻿import os
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import os
 import json
 import logging
 
@@ -18,3 +19,4 @@ if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, format='[%(asctime)s] %(message)s')
     despachar_alerta_remota_premium("ElaraAI™", "REPORTE_NTFS", "Ataques Repelidos: 973 pps | Estado NTFS: LOCKED")
     despachar_alerta_remota_premium("TokyoAI™", "REPORTE_CLINICO_RESEND", "Coherencia Cognitiva: 100% OK | Destino: thenewtokyocompany@gmail.com")
+

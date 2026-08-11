@@ -1,4 +1,5 @@
-﻿import sqlite3
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import sqlite3
 import os
 import uuid
 from datetime import datetime, timedelta
@@ -71,3 +72,4 @@ class LicenseManager:
             if license['status'] != 'ACTIVE':
                 return False, f"Estado de licencia: {license['status']}."
             return True, dict(license)
+

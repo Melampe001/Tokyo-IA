@@ -1,4 +1,5 @@
-﻿import os
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import os
 import shutil
 import logging
 
@@ -11,3 +12,4 @@ def transferir_a_produccion(nombre_bloque):
         logging.info(f"[PUENTE] Bloque '{nombre_bloque}' transferido con éxito a Producción.")
         return True
     return False
+

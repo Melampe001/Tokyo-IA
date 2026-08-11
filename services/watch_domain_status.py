@@ -1,4 +1,5 @@
-﻿import os
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import os
 import sys
 import time
 import json
@@ -69,3 +70,4 @@ def start_watching():
 
 if __name__ == "__main__":
     start_watching()
+

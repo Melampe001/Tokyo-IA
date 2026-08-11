@@ -1,4 +1,5 @@
-﻿import sys
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import sys
 import os
 
 # Asegurar acceso al directorio raíz y módulos
@@ -24,3 +25,4 @@ def run_trading_node_test():
 
 if __name__ == "__main__":
     run_trading_node_test()
+

@@ -1,4 +1,5 @@
-﻿import json
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import json
 import logging
 import hashlib
 import time
@@ -85,3 +86,4 @@ def main_loop():
 
 if __name__ == "__main__":
     main_loop()
+

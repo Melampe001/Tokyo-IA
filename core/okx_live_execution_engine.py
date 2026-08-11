@@ -1,4 +1,5 @@
-﻿import os
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import os
 import json
 import logging
 import time
@@ -31,3 +32,4 @@ class OKXLiveExecutionEngine:
 if __name__ == "__main__":
     engine = OKXLiveExecutionEngine()
     engine.place_market_order()
+

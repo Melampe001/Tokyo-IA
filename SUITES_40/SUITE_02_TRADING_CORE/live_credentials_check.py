@@ -1,4 +1,5 @@
-﻿# ==============================================================================
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+# ==============================================================================
 # FLAGGSHIP APPS - RIGOROUS OKX CREDENTIALS & PERMISSIONS VALIDATOR (2026)
 # ==============================================================================
 import os
@@ -72,3 +73,4 @@ def verify_live_api():
 
 if __name__ == "__main__":
     verify_live_api()
+

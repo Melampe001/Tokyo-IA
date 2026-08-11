@@ -1,4 +1,5 @@
-﻿import ccxt, json, uuid, time, sys, io, os, gc
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import ccxt, json, uuid, time, sys, io, os, gc
 
 # [💎] LEY DE LA VERDAD: Sincronía de Rutas Genómicas
 ruta_raiz = r"E:\TOKYOAPPS_UNIVERSE\01_ACTIVE\NULOGIC_CORE"
@@ -51,3 +52,4 @@ def ejecutar_excelencia_tri_engine():
 
 if __name__ == "__main__":
     ejecutar_excelencia_tri_engine()
+

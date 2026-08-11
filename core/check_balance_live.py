@@ -1,4 +1,5 @@
-﻿import ccxt, json, os, sys, io
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import ccxt, json, os, sys, io
 # SSSoT: Alineación de Rutas
 sys.path.append(r"E:\TOKYOAPPS_UNIVERSE\01_ACTIVE\NULOGIC_CORE")
 from core.estado_kernel import EstadoKernel
@@ -39,3 +40,4 @@ def auditar_saldo_real():
 
 if __name__ == "__main__":
     auditar_saldo_real()
+

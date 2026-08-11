@@ -1,4 +1,5 @@
-﻿import time, gc, os, json, uuid
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import time, gc, os, json, uuid
 from core.estado_kernel import EstadoKernel
 
 def ejecutar_sello_metamorfosis():
@@ -28,3 +29,4 @@ def ejecutar_sello_metamorfosis():
 
 if __name__ == "__main__":
     ejecutar_sello_metamorfosis()
+

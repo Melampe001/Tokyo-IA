@@ -1,4 +1,5 @@
-﻿import os
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import os
 from PreFlight_Core import PreFlightOrchestrator
 
 if __name__ == "__main__":
@@ -10,3 +11,4 @@ if __name__ == "__main__":
         
     print("\n[*] Lanzando simulación de contingencia sobre Módulo_Seguridad_Binance...")
     orquestador.validar_y_optimizar("Módulo_Seguridad_Binance", codigo_nodo)
+

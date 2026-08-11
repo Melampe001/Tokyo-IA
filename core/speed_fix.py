@@ -1,4 +1,5 @@
-﻿import time, gc, sys, io
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import time, gc, sys, io
 
 # Sello de Verdad: Asegurar que Python hable UTF-8 en la consola
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
@@ -17,3 +18,4 @@ def ejecucion_latencia_pura():
 
 if __name__ == "__main__":
     ejecucion_latencia_pura()
+

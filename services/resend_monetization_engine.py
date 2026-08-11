@@ -1,4 +1,5 @@
-﻿import os
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import os
 import sys
 import json
 import urllib.request
@@ -61,3 +62,4 @@ class RascacielosResendEngine:
 if __name__ == "__main__":
     engine = RascacielosResendEngine()
     print(f"[✅] Motor Resend configurado con el dominio oficial: {FROM_EMAIL}")
+

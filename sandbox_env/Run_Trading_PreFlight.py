@@ -1,4 +1,5 @@
-﻿import os
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import os
 from PreFlight_Core import PreFlightOrchestrator
 
 if __name__ == "__main__":
@@ -10,3 +11,4 @@ if __name__ == "__main__":
             codigo_trading = f.read()
         print("\n[*] Iniciando simulación estática y empaquetado dinámico...")
         orquestador.validar_y_optimizar("Conector_Binance", codigo_trading)
+

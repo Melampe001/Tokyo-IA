@@ -1,4 +1,5 @@
-﻿import sys, os, io
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import sys, os, io
 
 # [💎] LEY DE LA VERDAD: Inyección de Ruta ANTES de cualquier importación
 ruta_raiz = r"E:\TOKYOAPPS_UNIVERSE\01_ACTIVE\NULOGIC_CORE"
@@ -51,3 +52,4 @@ def ejecutar_rafaga_soberana():
 
 if __name__ == "__main__":
     ejecutar_rafaga_soberana()
+

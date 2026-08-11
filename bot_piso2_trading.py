@@ -1,4 +1,5 @@
-﻿import json, time, requests
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import json, time, requests
 
 print("\n[🚀] INICIANDO MOTOR DE TRADING AUTÓNOMO (PISO 2) - MONITOREO EN VIVO")
 
@@ -24,3 +25,4 @@ for i in range(3):
     time.sleep(2)
 
 print("\n[✅] Ciclo de análisis de mercado ejecutado correctamente.")
+

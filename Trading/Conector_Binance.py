@@ -1,4 +1,5 @@
-﻿import os
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import os
 import logging
 
 def inicializar_canal_binance():
@@ -12,3 +13,4 @@ def inicializar_canal_binance():
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, format='[%(asctime)s] %(message)s')
     inicializar_canal_binance()
+

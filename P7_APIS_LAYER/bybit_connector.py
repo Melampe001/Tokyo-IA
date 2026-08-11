@@ -1,3 +1,5 @@
-﻿# Bybit High-Frequency API Connector
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+# Bybit High-Frequency API Connector
 import time
 print('[P7] Conector de Alta Frecuencia Activo.')
+

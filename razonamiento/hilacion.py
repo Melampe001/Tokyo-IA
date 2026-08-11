@@ -1,4 +1,5 @@
-﻿# ============================================================
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+# ============================================================
 # hilacion.py - EL QUE CONECTA EL PASADO CON EL PRESENTE
 # ============================================================
 # QUE HACE: Conecta la respuesta actual con conversaciones
@@ -26,3 +27,4 @@ def encontrar_conexiones(tema_actual, historial_pasado):
     con el tema actual que valga la pena mencionar.
     """
     pass
+

@@ -1,1 +1,3 @@
-﻿print('[🛡️] Watchdog Activo en Piso6_Motor_Industrial')
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+print('[🛡️] Watchdog Activo en Piso6_Motor_Industrial')
+

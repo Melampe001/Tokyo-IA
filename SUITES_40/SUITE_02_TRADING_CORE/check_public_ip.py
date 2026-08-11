@@ -1,4 +1,5 @@
-﻿import requests
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import requests
 
 try:
     print("[INFO] Consultando IP pública actual...")
@@ -18,3 +19,4 @@ try:
     
 except Exception as e:
     print(f"[ERROR] No se pudo obtener la IP pública: {str(e)}")
+

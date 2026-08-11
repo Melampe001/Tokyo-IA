@@ -1,3 +1,4 @@
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
 import os, json, sys, io, ccxt
 
 # Forzar buffer estándar a UTF-8 con reescritura de errores para evitar fallos de codec en Windows

@@ -1,4 +1,5 @@
-﻿import os
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import os
 import json
 import logging
 import time
@@ -33,3 +34,4 @@ class TokyoLiquidityPipeline:
 if __name__ == "__main__":
     pipeline = TokyoLiquidityPipeline()
     pipeline.execute_arbitrage_scan()
+

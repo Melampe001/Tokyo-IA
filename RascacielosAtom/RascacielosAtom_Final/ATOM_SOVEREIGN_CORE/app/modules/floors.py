@@ -1,4 +1,5 @@
-﻿from fastapi import APIRouter, BackgroundTasks
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+from fastapi import APIRouter, BackgroundTasks
 import elara
 import time
 
@@ -21,3 +22,4 @@ async def liquidar(tasks: BackgroundTasks, monto: float = 1557.34):
 @router.get("/status")
 async def get_status():
     return {"status": "Pisos Sincronizados", "soberania": "Total"}
+

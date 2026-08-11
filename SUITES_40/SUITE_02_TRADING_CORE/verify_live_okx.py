@@ -1,4 +1,5 @@
-﻿# ==============================================================================
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+# ==============================================================================
 # FLAGGSHIP APPS - OKX LIVE CONNECTION VERIFIER (2026)
 # ==============================================================================
 import os
@@ -66,3 +67,4 @@ def test_live_connection():
 
 if __name__ == "__main__":
     test_live_connection()
+

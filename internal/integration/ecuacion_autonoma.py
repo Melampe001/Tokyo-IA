@@ -1,4 +1,5 @@
-﻿import os
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import os
 import sys
 from fastapi import FastAPI, HTTPException, Depends
 from fastapi.security import APIKeyHeader
@@ -25,3 +26,4 @@ async def ejecutar_ecuacion_autonoma(data: DataInput):
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="127.0.0.1", port=8000, log_level="warning")
+

@@ -1,4 +1,5 @@
-﻿# NULOGIC_CORE :: Rascacielos Digital Engine
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+# NULOGIC_CORE :: Rascacielos Digital Engine
 import sys
 import os
 

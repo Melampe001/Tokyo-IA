@@ -1,4 +1,5 @@
-﻿import sys, os, io, time, gc, uuid, json, ccxt
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import sys, os, io, time, gc, uuid, json, ccxt
 # SSSoT: Prioridad de Rutas (Piso 1 - Kernel Cognitivo)
 ruta_raiz = r"E:\TOKYOAPPS_UNIVERSE\01_ACTIVE\NULOGIC_CORE"
 if ruta_raiz not in sys.path: sys.path.insert(0, ruta_raiz)
@@ -62,3 +63,4 @@ class SovereignHealer:
 if __name__ == "__main__":
     Healer = SovereignHealer()
     Healer.ejecutar_rafaga_con_mando()
+

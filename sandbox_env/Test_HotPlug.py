@@ -1,4 +1,5 @@
-﻿import sys
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import sys
 import os
 import importlib
 import logging
@@ -29,3 +30,4 @@ if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, format='[%(asctime)s] %(message)s')
     # Prueba de acoplamiento del nuevo bloque empaquetado
     cargar_bloque_en_caliente("Modulo_Liquidacion_Emergencia")
+

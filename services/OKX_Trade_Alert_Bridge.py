@@ -1,4 +1,5 @@
-﻿import os
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import os
 import sys
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -21,3 +22,4 @@ def process_live_trade_event(symbol, side, amount, profit_usdt):
 
 if __name__ == "__main__":
     process_live_trade_event("BTC-USDT-SWAP", "BUY_ARBITRAGE", "0.05", "+12.45")
+

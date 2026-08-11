@@ -1,4 +1,5 @@
-﻿import os
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import os
 import logging
 import time
 
@@ -22,3 +23,4 @@ if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, format='[%(asctime)s] [%(levelname)s] %(message)s')
     pipeline = GooglePlayConsolePipeline()
     pipeline.despachar_aab_produccion()
+

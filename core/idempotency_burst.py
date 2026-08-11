@@ -1,4 +1,5 @@
-﻿import time, gc, sys, io
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import time, gc, sys, io
 # SSSoT: Adaptacion de ruta para ejecucion desde raiz o subcarpeta
 import os
 sys.path.append(os.getcwd())
@@ -26,3 +27,4 @@ def ejecutar_rafaga_soberana():
 
 if __name__ == "__main__":
     ejecutar_rafaga_soberana()
+

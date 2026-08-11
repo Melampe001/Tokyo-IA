@@ -1,4 +1,5 @@
-﻿import os
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import os
 import sys
 import asyncio
 import aiohttp
@@ -66,4 +67,5 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
 

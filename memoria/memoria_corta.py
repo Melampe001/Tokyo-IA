@@ -1,3 +1,4 @@
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
 import json
 import os
 
@@ -21,3 +22,4 @@ class MemoriaCorta:
         self.historial["turnos"].append({"usuario": usuario, "ia": respuesta})
         with open(self.archivo, 'w') as f:
             json.dump(self.historial, f, indent=4)
+

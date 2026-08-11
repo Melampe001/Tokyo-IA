@@ -1,4 +1,5 @@
-﻿import os
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import os
 import json
 import random
 from datetime import datetime
@@ -35,3 +36,4 @@ class OKXSignalsEngine:
             }
         }
         return signal
+

@@ -1,4 +1,5 @@
-﻿"""
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+"""
 NULOGIC CORE :: AGENTE DE MÉTRICAS DE CONTENIDO (TIKTOK & INSTAGRAM)
 Conectores API REST con soporte para Instagram Graph API y TikTok Display API.
 """

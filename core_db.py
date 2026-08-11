@@ -1,3 +1,4 @@
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
 import sqlite3, datetime, os, hashlib
 
 DB_PATH = "Tokyo_001.db"

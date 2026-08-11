@@ -1,4 +1,5 @@
-﻿# ==============================================================================
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+# ==============================================================================
 # FLAGGSHIP APPS - OKX IP-SECURED CONNECTOR (2026)
 # ==============================================================================
 import os
@@ -50,3 +51,4 @@ if __name__ == "__main__":
     balance = connector.get_account_balance()
     if balance:
         print(json.dumps(balance, indent=4))
+

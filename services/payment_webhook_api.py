@@ -1,4 +1,5 @@
-﻿from fastapi import FastAPI, HTTPException, Header, BackgroundTasks
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+from fastapi import FastAPI, HTTPException, Header, BackgroundTasks
 from pydantic import BaseModel
 from real_monetization_core import NulogicMonetizationEngine, PRODUCTS_CATALOG
 from okx_signals_engine import OKXSignalsEngine
@@ -51,3 +52,4 @@ def verify_dev_license(req: ValidateLicenseRequest):
     if not result.get("authorized"):
         raise HTTPException(status_code=401, detail=result.get("reason"))
     return result
+

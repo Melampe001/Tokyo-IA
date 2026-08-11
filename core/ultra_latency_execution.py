@@ -1,4 +1,5 @@
-﻿import sys, os, time, gc, uuid, json, ccxt
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import sys, os, time, gc, uuid, json, ccxt
 ruta_raiz = r"E:\TOKYOAPPS_UNIVERSE\01_ACTIVE\NULOGIC_CORE"
 if ruta_raiz not in sys.path: sys.path.insert(0, ruta_raiz)
 
@@ -31,3 +32,4 @@ def ejecutar_pulso_aprobado():
 
 if __name__ == "__main__":
     ejecutar_pulso_aprobado()
+

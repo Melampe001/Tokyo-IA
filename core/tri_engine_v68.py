@@ -1,4 +1,5 @@
-﻿import ccxt, json, os, sys, io, time, gc, uuid
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import ccxt, json, os, sys, io, time, gc, uuid
 sys.path.append(r"E:\TOKYOAPPS_UNIVERSE\01_ACTIVE\NULOGIC_CORE")
 from core.estado_kernel import EstadoKernel
 
@@ -54,3 +55,4 @@ def activar_tri_engine(ip_actual):
 
 if __name__ == "__main__":
     activar_tri_engine("2806:261:b400:87a8:a137:4097:b5ea:66ec")
+

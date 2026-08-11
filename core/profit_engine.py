@@ -1,4 +1,5 @@
-﻿import ccxt, json, time, uuid, sys, io
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import ccxt, json, time, uuid, sys, io
 from core.estado_kernel import EstadoKernel
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
@@ -53,3 +54,4 @@ def ejecutar_trading_rentable():
 
 if __name__ == "__main__":
     ejecutar_trading_rentable()
+

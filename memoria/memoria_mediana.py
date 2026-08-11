@@ -1,4 +1,5 @@
-﻿# ============================================================
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+# ============================================================
 # memoria_mediana.py - MEMORIA A MEDIANO PLAZO
 # ============================================================
 # QUE HACE: Guarda conversaciones de los Ãºltimos dÃ­as.
@@ -33,3 +34,4 @@ class MemoriaMediana:
     def limpiar_antiguas(self):
         """Elimina conversaciones mÃ¡s viejas que el lÃ­mite"""
         pass
+

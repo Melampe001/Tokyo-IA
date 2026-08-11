@@ -1,4 +1,5 @@
-﻿import os, json, hmac, hashlib, base64, datetime, requests, socket
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import os, json, hmac, hashlib, base64, datetime, requests, socket
 
 # Forzar resolución DNS a IPv4 (A record only) para evitar que requests tome IPv6 de Megacable
 old_getaddrinfo = socket.getaddrinfo
@@ -67,3 +68,4 @@ try:
 
 except Exception as e:
     print(f"\n[ERROR CRÍTICO] {str(e)}")
+

@@ -1,4 +1,5 @@
-﻿import time, psutil, os
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import time, psutil, os
 def medir_eficiencia(ruta):
     inicio_reloj = time.perf_counter()
     # Prueba de Estrés Atómica: Inyección de 100k bloques
@@ -23,3 +24,4 @@ if calor_e < calor_c:
     print('[✅] LEY DE LA VERDAD: El disco E: es un 158% más eficiente.')
 else:
     print('[⚠️] ADVERTENCIA: Se detecta fricción residual en hilos de E:.')
+

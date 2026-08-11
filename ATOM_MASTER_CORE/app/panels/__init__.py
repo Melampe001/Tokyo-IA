@@ -1,1 +1,3 @@
-﻿from . import floor_manager
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+from . import floor_manager
+

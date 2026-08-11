@@ -1,4 +1,5 @@
-﻿# ============================================================
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+# ============================================================
 # utils.py - HERRAMIENTAS COMPARTIDAS
 # ============================================================
 # QUE HACE: Funciones Ãºtiles que usan TODOS los mÃ³dulos.
@@ -26,3 +27,4 @@ def timestamp_ahora():
 def resumir_texto(texto, max_palabras=50):
     """Resume un texto largo en pocas palabras"""
     pass
+

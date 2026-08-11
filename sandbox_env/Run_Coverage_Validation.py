@@ -1,4 +1,5 @@
-﻿from PreFlight_Core import PreFlightOrchestrator
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+from PreFlight_Core import PreFlightOrchestrator
 
 orquestador = PreFlightOrchestrator()
 
@@ -21,3 +22,4 @@ print('[OKX CORES HFT] Conector de liquidación cruzada listo.')
 print("[*] Ejecutando simulación estática y validación semántica en jaula de arena...")
 orquestador.validar_y_optimizar("Conector_Bybit_Liquidez", codigo_bybit)
 orquestador.validar_y_optimizar("Conector_OKX_Arbitraje", codigo_okx)
+

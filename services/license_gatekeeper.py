@@ -1,4 +1,5 @@
-﻿import os
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import os
 from license_db_manager import LicenseManager
 
 class FlaggShipGatekeeper:
@@ -19,3 +20,4 @@ class FlaggShipGatekeeper:
             "expires_at": details.get("expires_at"),
             "status": details.get("status")
         }
+

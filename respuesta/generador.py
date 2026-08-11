@@ -1,3 +1,4 @@
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
 # -*- coding: utf-8 -*-
 import datetime, pickle
 from nucleo.telemetria import _zeekr
@@ -11,3 +12,4 @@ class ElaraCognitiva:
         return f"[{ts}] NODE:{self.node_id} | STATUS:0x00 | EXEC_STABLE"
 _engine = ElaraCognitiva()
 def generar_respuesta(entrada, c, t): return _engine.procesar(entrada)
+

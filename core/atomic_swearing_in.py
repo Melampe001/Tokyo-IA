@@ -1,4 +1,5 @@
-﻿import sys, os, time, gc, uuid, json, shutil
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import sys, os, time, gc, uuid, json, shutil
 ruta_raiz = r"E:\TOKYOAPPS_UNIVERSE\01_ACTIVE\NULOGIC_CORE"
 if ruta_raiz not in sys.path: sys.path.insert(0, ruta_raiz)
 
@@ -40,3 +41,4 @@ def ejecutar_juramentacion_atomica():
 
 if __name__ == "__main__":
     ejecutar_juramentacion_atomica()
+

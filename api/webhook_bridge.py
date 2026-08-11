@@ -1,4 +1,5 @@
-﻿from http.server import HTTPServer, BaseHTTPRequestHandler
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+from http.server import HTTPServer, BaseHTTPRequestHandler
 import json
 
 class WebhookHandler(BaseHTTPRequestHandler):
@@ -18,3 +19,4 @@ def run(port=8000):
 
 if __name__ == "__main__":
     run()
+

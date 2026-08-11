@@ -1,3 +1,4 @@
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
 import time, threading, os
 from core_db import init_db, log_event, update_suite_state
 from sync_engine import mirror_to_drives

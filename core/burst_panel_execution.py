@@ -1,4 +1,5 @@
-﻿import ccxt, json, uuid, time, sys, io, os
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import ccxt, json, uuid, time, sys, io, os
 
 # SSSoT: Sintonización de Rutas Genómicas
 ruta_raiz = r"E:\TOKYOAPPS_UNIVERSE\01_ACTIVE\NULOGIC_CORE"
@@ -48,3 +49,4 @@ def activar_rafaga_total():
 
 if __name__ == "__main__":
     activar_rafaga_total()
+

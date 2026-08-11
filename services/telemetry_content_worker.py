@@ -1,4 +1,5 @@
-﻿import json
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import json
 import time
 import os
 
@@ -12,3 +13,4 @@ def process_telemetry():
 
 if __name__ == "__main__":
     process_telemetry()
+

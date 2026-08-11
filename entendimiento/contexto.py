@@ -1,4 +1,5 @@
-﻿# ============================================================
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+# ============================================================
 # contexto.py - EL QUE SABE DE QUÃ‰ VA LA CONVERSACIÃ“N
 # ============================================================
 # QUE HACE: Mantiene el hilo temÃ¡tico de la conversaciÃ³n.
@@ -31,3 +32,4 @@ def resolver_referencias(texto, historial):
 def identificar_tema_actual(historial):
     """Detecta el tema principal de la conversaciÃ³n"""
     pass
+

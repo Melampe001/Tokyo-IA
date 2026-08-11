@@ -1,4 +1,5 @@
-﻿import os
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import os
 import json
 import urllib.request
 import urllib.error
@@ -54,3 +55,4 @@ class NulogicMonetizationEngine:
         except Exception as e:
             print(f"[❌ ERROR ENTREGA]: {str(e)}")
             return False, license_key
+

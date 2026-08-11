@@ -1,4 +1,5 @@
-﻿import time, json, os, sys, io
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import time, json, os, sys, io
 from core.estado_kernel import EstadoKernel
 
 # Sello de Verdad: UTF-8 inmaculado [9]
@@ -27,3 +28,4 @@ def validar_organismo():
 
 if __name__ == "__main__":
     validar_organismo()
+

@@ -1,4 +1,5 @@
-﻿import time, datetime, sqlite3, requests, threading
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import time, datetime, sqlite3, requests, threading
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 

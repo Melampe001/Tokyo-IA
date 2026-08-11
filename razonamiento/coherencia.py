@@ -1,4 +1,5 @@
-﻿# ============================================================
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+# ============================================================
 # coherencia.py - EL QUE VERIFICA QUE TENGA SENTIDO
 # ============================================================
 # QUE HACE: Antes de responder, verifica que la respuesta
@@ -29,3 +30,4 @@ def detectar_contradicciones(respuesta, historial):
 def verificar_que_responde_la_pregunta(respuesta, pregunta):
     """Verifica que realmente se estÃ© respondiendo lo que se preguntÃ³"""
     pass
+

@@ -1,3 +1,4 @@
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
 import json
 import os
 import sys
@@ -35,3 +36,4 @@ if __name__ == "__main__":
     orchestrator = FlaggShipOrchestrator()
     estado = orchestrator.activar_agente()
     print(estado)
+

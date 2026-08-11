@@ -1,4 +1,5 @@
-﻿from datetime import datetime
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+from datetime import datetime
 from pathlib import Path
 import json, uuid, copy
 
@@ -20,3 +21,4 @@ class EstadoKernel:
         evento = {"id": str(uuid.uuid4()), "ts": str(datetime.now()), "mod": modulo, "acc": accion}
         self.eventos.append(evento)
         return evento["id"]
+

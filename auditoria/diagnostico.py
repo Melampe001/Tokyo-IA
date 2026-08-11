@@ -1,4 +1,5 @@
-﻿# -*- coding: utf-8 -*-
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+# -*- coding: utf-8 -*-
 def validar_integridad():
     # Verifica los 5 niveles antes de habilitar el sistema
     niveles = [1, 2, 3, 4, 5]

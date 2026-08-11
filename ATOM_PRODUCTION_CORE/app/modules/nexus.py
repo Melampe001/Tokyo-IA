@@ -1,4 +1,5 @@
-﻿from fastapi import APIRouter, BackgroundTasks
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+from fastapi import APIRouter, BackgroundTasks
 import elara
 from datetime import datetime
 import time
@@ -23,3 +24,4 @@ async def execute_service(bt: BackgroundTasks, service: str = "SaaS_Enterprise")
     monto_cobro = 258.56 if service == "SaaS_Enterprise" else 0.24 # Pay-Per-Call
     bt.add_task(liquidar_activo, monto_cobro, "11", f"SERVICIO {service}")
     return {"status": "Liquidación Exitosa", "monto": monto_cobro, "ley": "Verdad Técnica"}
+

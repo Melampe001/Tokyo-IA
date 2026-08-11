@@ -1,4 +1,5 @@
-﻿import os
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import os
 import time
 import base64
 import hmac
@@ -60,3 +61,4 @@ class OKXIpAuthConnector:
 if __name__ == "__main__":
     connector = OKXIpAuthConnector()
     print("[✅] Conector OKX IP-Bound cargado correctamente.")
+

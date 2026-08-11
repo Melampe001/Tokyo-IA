@@ -1,4 +1,5 @@
-﻿import os
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import os
 import logging
 
 def liquidacion_nodos_emergencia():
@@ -10,3 +11,4 @@ def liquidacion_nodos_emergencia():
 
 if __name__ == "__main__":
     liquidacion_nodos_emergencia()
+

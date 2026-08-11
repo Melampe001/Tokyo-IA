@@ -1,4 +1,5 @@
-﻿# -*- coding: utf-8 -*-
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+# -*- coding: utf-8 -*-
 import datetime
 import pickle
 

@@ -1,4 +1,5 @@
-﻿import sys, os, io, time, gc, uuid, json, ccxt
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import sys, os, io, time, gc, uuid, json, ccxt
 # SSSoT: Prioridad de Rutas (Piso 1)
 ruta_raiz = r"E:\TOKYOAPPS_UNIVERSE\01_ACTIVE\NULOGIC_CORE"
 if ruta_raiz not in sys.path: sys.path.insert(0, ruta_raiz)
@@ -63,3 +64,4 @@ def encender_motores_reales():
 
 if __name__ == "__main__":
     encender_motores_reales()
+

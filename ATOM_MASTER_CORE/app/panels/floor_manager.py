@@ -1,4 +1,5 @@
-﻿from fastapi import APIRouter
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+from fastapi import APIRouter
 import elara
 
 router = APIRouter(prefix="/piso", tags=["Operaciones Industriales"])
@@ -14,3 +15,4 @@ async def execute_trade(amount: float):
     balance = db.get("global_balance") or 0.0
     db.set("global_balance", balance + amount)
     return {"result": "Success", "new_balance": db.get("global_balance")}
+

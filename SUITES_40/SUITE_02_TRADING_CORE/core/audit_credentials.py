@@ -1,4 +1,5 @@
-﻿import os, json
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import os, json
 
 credential_paths = [
     "okx_credentials.json",
@@ -37,3 +38,4 @@ if not api_key or not secret_key or not passphrase:
     print("\n[⚠️ ALERTA] Faltan componentes en el token de acceso. Revise su JSON.")
 else:
     print("\n[✅ ÉXITO] El token de acceso posee todos los componentes estructurales requeridos.")
+

@@ -1,4 +1,5 @@
-﻿import os
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import os
 import sys
 import json
 import urllib.request
@@ -49,3 +50,4 @@ def fetch_domain_dns():
 
 if __name__ == "__main__":
     fetch_domain_dns()
+

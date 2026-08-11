@@ -1,4 +1,5 @@
-﻿import sqlite3
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import sqlite3
 import os
 
 DB_PATH = os.path.join(os.path.dirname(__file__), "nulogic_cache.db")
@@ -19,3 +20,4 @@ def init_db():
 if __name__ == "__main__":
     init_db()
     print("[✅] Base de datos SQLite WAL inicializada correctamente.")
+

@@ -1,4 +1,5 @@
-﻿import requests, time
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import requests, time
 
 try:
     print("[INFO] Probando consistencia de IP de salida en 3 saltos consecutivos...")
@@ -21,3 +22,4 @@ try:
 
 except Exception as e:
     print(f"[ERROR] {str(e)}")
+

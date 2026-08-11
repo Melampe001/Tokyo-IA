@@ -1,4 +1,5 @@
-﻿import time
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import time
 
 def generar_timestamp_soberano():
     ts = str(int(time.time() * 1000))
@@ -8,3 +9,4 @@ def generar_timestamp_soberano():
 if __name__ == '__main__':
     generar_timestamp_soberano()
     print('[💎] LEY MAQUINARIA: Sincronía de engranajes validada al 158%.')
+

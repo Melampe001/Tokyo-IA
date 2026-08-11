@@ -1,4 +1,5 @@
-﻿import json
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import json
 import os
 
 def validate_and_execute_order(symbol, side, size, available_balance_usd):
@@ -31,3 +32,4 @@ def validate_and_execute_order(symbol, side, size, available_balance_usd):
             "symbol": symbol,
             "side": side
         }
+

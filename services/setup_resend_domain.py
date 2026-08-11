@@ -1,4 +1,5 @@
-﻿import os
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import os
 import sys
 import json
 import urllib.request
@@ -52,3 +53,4 @@ def register_domain_in_resend():
 
 if __name__ == "__main__":
     register_domain_in_resend()
+

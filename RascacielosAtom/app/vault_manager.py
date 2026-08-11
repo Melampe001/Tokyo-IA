@@ -1,4 +1,5 @@
-﻿import elara
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import elara
 import json
 from datetime import datetime
 
@@ -33,3 +34,4 @@ print(f"--- BÓVEDA ACTUALIZADA ---")
 print(f"Saldo Anterior: ")
 print(f"Inyección Actual: ")
 print(f"SALDO SOBERANO TOTAL: ")
+

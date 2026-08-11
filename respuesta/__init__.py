@@ -1,1 +1,3 @@
-# Paquete técnico
+ï»¿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+# Paquete tï¿½cnico
+

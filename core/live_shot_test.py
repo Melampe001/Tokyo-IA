@@ -1,3 +1,4 @@
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
 import os, sys, time, json, io, ccxt
 
 # Forzar codificación inmaculada

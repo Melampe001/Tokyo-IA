@@ -1,4 +1,5 @@
-﻿from fastapi import APIRouter, BackgroundTasks, HTTPException
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+from fastapi import APIRouter, BackgroundTasks, HTTPException
 import elara
 from datetime import datetime
 import time
@@ -23,3 +24,4 @@ async def execute_nexus_v1(bt: BackgroundTasks, monto: float = 0.24):
     # Modelo Pay-Per-Call para el API Gateway (Piso 11)
     bt.add_task(liquidacion_real_tiempo_real, monto, "11")
     return {"status": "Execution Started", "protocol": "Sovereign_v1"}
+

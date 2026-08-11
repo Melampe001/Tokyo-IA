@@ -1,4 +1,5 @@
-﻿import os
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import os
 import random
 import logging
 from Trading.Conector_Discord import despachar_alerta_remota_premium
@@ -14,3 +15,4 @@ if __name__ == "__main__":
     
     # Forzar el despacho físico de alertas firmadas a tu smartphone
     despachar_alerta_remota_premium("TokyoAI™", "MATRIZ_MONETIZADA_HFT", f"Ganancias de Arbitraje: +{spread_binance} USD | Data Feeds Cloud: +{spread_saas} USD")
+

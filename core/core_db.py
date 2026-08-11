@@ -1,4 +1,5 @@
-﻿import os
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import os
 import sqlite3
 import logging
 
@@ -43,3 +44,4 @@ class TokyoDatabaseCore:
 if __name__ == "__main__":
     db = TokyoDatabaseCore()
     db.log_event("MONETIZATION_CORE", "SUCCESS", "Pipeline y Ejecutor sincronizados al 100%")
+

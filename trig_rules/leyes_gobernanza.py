@@ -1,4 +1,5 @@
-﻿import os
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import os
 import logging
 
 class LeyesGobernanza:
@@ -17,3 +18,4 @@ class LeyesGobernanza:
             logging.error("[BLOQUEO LEY 7] Intento de acceso a secrets sin llave de hardware.")
             return False
         return True
+

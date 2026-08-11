@@ -1,4 +1,5 @@
-﻿import json, time, requests
+﻿# TOKYO OS (c) 2026 - TODOS LOS DERECHOS RESERVADOS - MARCA REGISTRADA
+import json, time, requests
 
 print("\n[🚀] INICIANDO MOTOR MULTI-FUENTE (OKX + ALPHA VANTAGE)")
 
@@ -39,3 +40,4 @@ for i in range(2):
     time.sleep(2)
 
 print("\n[✅] Sincronización multi-fuente completada.")
+
