@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.2/dist/terminal.min.css" />
+    <link rel="stylesheet" href="/static/style.css">
+    <title>ATOM | NEXUS-1 MONITOR</title>
+</head>
+<body class="terminal">
+    <div class="container">
+        <header><h1 class="glow">NEXUS-1: MONITOR DE SOBERANÍA</h1></header>
+        <section>
+            <div class="terminal-alert terminal-alert-primary">TOTAL EN BÓVEDA: $ {{ total }} USD</div>
+            <div class="terminal-grid">
+                {% for floor, balance in saldos.items() %}
+                <div class="terminal-card">
+                    <header>PISO {{ floor }}</header>
+                    <div>Saldo: <mark class="glow-text">$ {{ balance }}</mark></div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+        <hr>
+        <section>
+            <header><h3>AUDITORÍA REAL (LEY DE LA VERDAD)</h3></header>
+            <ul>{% for log in logs %}<li>{{ log }}</li>{% endfor %}</ul>
+        </section>
+    </div>
+</body>
+</html>

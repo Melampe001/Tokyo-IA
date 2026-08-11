@@ -7,7 +7,8 @@ def validate_and_execute_order(symbol, side, size, available_balance_usd):
     
     if os.path.exists(config_path):
         try:
-            with open(config_path, "r") as f:
+            # utf-8-sig maneja automáticamente el BOM de PowerShell
+            with open(config_path, "r", encoding="utf-8-sig") as f:
                 config = json.load(f)
                 min_notional = config.get("min_notional_usd", 1.00)
         except Exception as e:

@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.2/dist/terminal.min.css" />
+    <link rel="stylesheet" href="/static/style.css">
+    <title>ATOM | MASTER CONTROL</title>
+</head>
+<body class="terminal">
+    <div class="container">
+        <header><h1 class="glow">CENTRO DE MANDO GLOBAL - ATOM</h1></header>
+        <div class="terminal-nav">
+            <nav class="terminal-menu"><ul><li>ESTADO: <span class="online">ONLINE 24/7</span></li></ul></nav>
+        </div>
+        <div class="terminal-card">
+            <header>SITUACIÓN FINANCIERA (BÓVEDA P7)</header>
+            <div class="balance-box">SALDO SOBERANO: <mark>$ {{ balance }} USD</mark></div>
+        </div>
+        <section>
+            <header><h3>LOGS DE PROCESOS ACTIVOS</h3></header>
+            <table>
+                <thead><tr><th>Evento del Rascacielos</th></tr></thead>
+                <tbody>
+                    {% for log in logs %}
+                    <tr><td>> {{ log }}</td></tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>

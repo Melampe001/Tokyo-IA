@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.2/dist/terminal.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+        body { font-family: 'Fira Code', monospace; background: #1a170f; color: #eceae5; }
+    </style>
+    <title>ATOM | INDUSTRIAL PRODUCTION</title>
+</head>
+<body class="terminal">
+<div class="container">
+    <h1 style="color: #eec35e;">NEXUS-1: CONTROL DE ACTIVOS REALES</h1>
+    <div class="terminal-alert terminal-alert-primary">TOTAL EN BÓVEDA P7: $ {{ "%.2f"|format(total) }} USD</div>
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 20px;">
+        {% for floor, balance in saldos.items() %}
+        <div class="terminal-card">
+            <header>PISO {{ floor }}</header>
+            <div style="color: #eec35e; font-weight: bold;">$ {{ "%.2f"|format(balance) }}</div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="terminal-card">
+        <header>AUDITORÍA DE ACTIVOS EN TIEMPO REAL</header>
+        <pre><code>{% for log in logs[-10:] %}{{ log }}
+{% endfor %}</code></pre>
+    </div>
+</div>
+</body>
+</html>

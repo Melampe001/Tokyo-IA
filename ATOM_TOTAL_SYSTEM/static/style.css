@@ -1,0 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+:root { --primary: #eec35e; --bg: #1a170f; }
+body { font-family: 'Fira Code', monospace; background: var(--bg); color: #eceae5; }
+.glow { text-shadow: 0 0 10px var(--primary); }
+.glow-text { color: var(--primary); font-weight: bold; text-shadow: 0 0 5px var(--primary); }
