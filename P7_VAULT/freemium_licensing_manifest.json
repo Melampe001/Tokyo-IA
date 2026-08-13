@@ -1,0 +1,16 @@
+{
+    "ecosystem":  "TokyoApps Micro-SaaS Freemium Engine",
+    "version":  "2.0.0-PROD",
+    "tiers":  {
+                  "free":  {
+                               "access":  "Basic Dashboard \u0026 Public Telemetry",
+                               "rate_limit":  "100 requests/day"
+                           },
+                  "premium":  {
+                                  "access":  "SyncFlow AI Automation \u0026 OKX Real-Balance Trading Matrix",
+                                  "price_usd_monthly":  49.99,
+                                  "status":  "Active Gateway"
+                              }
+              },
+    "timestamp":  "2026-08-12 22:17:11"
+}

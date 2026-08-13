@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
-    <title>TokyoApps - Micro-SaaS Portfolio</title>
+    <title>TokyoApps - Micro-SaaS Freemium Portal</title>
     <style>
         :root {
             --bg-color: #0f172a;
@@ -11,38 +11,54 @@
             --text-main: #f8fafc;
             --accent-color: #0ea5e9;
             --success-color: #22c55e;
+            --warning-color: #f59e0b;
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Segoe UI', sans-serif; background-color: var(--bg-color); color: var(--text-main); padding: 40px; }
-        header { margin-bottom: 30px; border-bottom: 1px solid var(--border-color); padding-bottom: 20px; }
+        header { margin-bottom: 30px; border-bottom: 1px solid var(--border-color); padding-bottom: 20px; display: flex; justify-content: space-between; align-items: center; }
         h1 { font-size: 24px; color: var(--accent-color); }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .card { background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 24px; box-shadow: 0 4px 6px rgba(0,0,0,0.3); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 24px; box-shadow: 0 4px 6px rgba(0,0,0,0.3); display: flex; flex-direction: column; justify-content: space-between; }
         .card h3 { font-size: 18px; margin-bottom: 10px; color: var(--text-main); }
-        .card p { font-size: 14px; color: #94a3b8; margin-bottom: 15px; }
-        .badge { display: inline-block; padding: 4px 10px; background: rgba(34, 197, 94, 0.2); color: var(--success-color); border-radius: 6px; font-size: 12px; font-weight: 600; }
+        .card p { font-size: 14px; color: #94a3b8; margin-bottom: 20px; }
+        .badge-free { display: inline-block; padding: 4px 10px; background: rgba(34, 197, 94, 0.2); color: var(--success-color); border-radius: 6px; font-size: 12px; font-weight: 600; width: fit-content; margin-bottom: 15px; }
+        .badge-pro { display: inline-block; padding: 4px 10px; background: rgba(245, 158, 11, 0.2); color: var(--warning-color); border-radius: 6px; font-size: 12px; font-weight: 600; width: fit-content; margin-bottom: 15px; }
+        .btn-action { background-color: var(--accent-color); color: white; border: none; padding: 10px 16px; border-radius: 8px; font-weight: 600; cursor: pointer; transition: opacity 0.2s; text-align: center; text-decoration: none; }
+        .btn-action:hover { opacity: 0.9; }
     </style>
 </head>
 <body>
     <header>
-        <h1>TokyoApps Micro-SaaS Portfolio</h1>
-        <p>Ecosistema unificado de aplicaciones autónomas y alto rendimiento.</p>
+        <div>
+            <h1>TokyoApps Micro-SaaS Portal</h1>
+            <p>Ecosistema autónomo de Inteligencia Artificial y Monetización 24/7.</p>
+        </div>
+        <span class="badge-free">SYSTEM STATUS: 24/7 ONLINE</span>
     </header>
     <div class="grid">
         <div class="card">
-            <h3>SyncFlow AI</h3>
-            <p>Automatización de flujos y tuberías de datos en tiempo real.</p>
-            <span class="badge">ONLINE #1</span>
+            <div>
+                <h3>SyncFlow AI (Free Tier)</h3>
+                <p>Automatización básica de flujos de datos y telemetría pública del sistema.</p>
+                <span class="badge-free">FREEMIUM ACCESS</span>
+            </div>
+            <a href="#" class="btn-action">Acceder Gratis</a>
         </div>
         <div class="card">
-            <h3>OKX Arbitrage Matrix</h3>
-            <p>Motor de rebalanceo de spreads y ejecución con saldo real.</p>
-            <span class="badge">ACTIVE TRADING</span>
+            <div>
+                <h3>OKX Arbitrage Matrix (PRO)</h3>
+                <p>Motor avanzado de rebalanceo de spreads y ejecución financiera con saldo real.</p>
+                <span class="badge-pro">$49.99 / MES - PAYWALL</span>
+            </div>
+            <a href="#" class="btn-action" style="background-color: #f59e0b; color: #0f172a;">Activar Suscripción PRO</a>
         </div>
         <div class="card">
-            <h3>P7 Vault Guard</h3>
-            <p>Gestión de integridad y encriptación de datos bajo Zero-Trust.</p>
-            <span class="badge">SECURE</span>
+            <div>
+                <h3>P7 Vault Guard (Enterprise)</h3>
+                <p>Blindaje de integridad criptográfica bajo Zero-Trust y auditoría SSoT continua.</p>
+                <span class="badge-pro">ENTERPRISE LICENSE</span>
+            </div>
+            <a href="#" class="btn-action">Gestionar Licencia</a>
         </div>
     </div>
 </body>
