@@ -1,0 +1,3 @@
+﻿[2026-07-31 15:12:53] [DEPLOY_PROD] Despliegue de producción iniciado desde SNAPSHOT_20260731_145926
+[2026-07-31 15:12:53] [PIDs] MasterServer: 2556 | Watchdog: 11868 | TriEngine: 12512
+[2026-07-31 15:29:54] [EXPANSION_PROD] WebhookBridge PID: 5316 | Dashboard PID: 14380 | TelemetryWorker PID: 13904

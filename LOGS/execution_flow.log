@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\NULOGIC_CORE\pkg\utils\gobernanza_total_github.py", line 18, in <module>
+    with open(log_path, "a", encoding="utf-8") as log:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\NULOGIC_CORE\\logs\\execution_flow.log'
