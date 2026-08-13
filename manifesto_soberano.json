@@ -1,0 +1,22 @@
+{
+  "ecosystem": "NULOGIC_CORE",
+  "architecture": "Rascacielos Digital (sky)",
+  "governance": "Sovereign Big Tech Standards - 14 Laws",
+  "agents": ["ElaraAI", "TokyoAI"],
+  "laws": {
+    "1_law_zero": "Absolute determinism, active readiness probes, zero assumptions.",
+    "2_conway_law": "Code architecture mirrors business logic without toxic coupling.",
+    "3_postels_law": "Be conservative in transmission, resilient in ingestion.",
+    "4_cap_theorem": "Guaranteed consistency and state integrity in the SSoT.",
+    "5_simplicity": "Enforce DRY, KISS, and YAGNI strictly.",
+    "6_pareto_rule": "Focus engineering rigor on the 20% core stabilizing the system.",
+    "7_hyrums_law": "All observable behaviors of an API become implicit dependencies.",
+    "8_teslers_law": "Complexity is conserved; push it to the backend to keep interfaces clean.",
+    "9_brooks_law": "Modular automation triumphs over resource massification.",
+    "10_galls_law": "Complex systems that work invariably evolve from simple working systems.",
+    "11_amdahls_law": "Optimize real bottlenecks rather than secondary processes.",
+    "12_goodharts_law": "Metrics reflect true operational health, not superficial targets.",
+    "13_wirths_law": "Combat software bloat with clean, efficient execution.",
+    "14_boy_scout_rule": "Leave the codebase cleaner than you found it; zero technical debt."
+  }
+}

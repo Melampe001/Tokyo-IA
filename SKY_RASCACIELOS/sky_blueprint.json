@@ -1,0 +1,30 @@
+{
+  "project": "Rascacielos Digital (sky)",
+  "version": "1.0.0",
+  "big_tech_pillars": {
+    "1_observability": {
+      "structured_logs": true,
+      "metrics_enabled": true,
+      "distributed_tracing": true,
+      "output_path": "SKY_RASCACIELOS/telemetry/"
+    },
+    "2_cicd_pipelines": {
+      "automated_linting": true,
+      "deterministic_builds": true,
+      "pipeline_path": "SKY_RASCACIELOS/cicd_pipelines/"
+    },
+    "3_security_zero_trust": {
+      "vault_type": "Cloud Vault Local Encrypted",
+      "secrets_path": "SKY_RASCACIELOS/cloud_vault/secure_store/"
+    },
+    "4_chaos_engineering": {
+      "simulation_lab": "SYNEMU",
+      "chaos_tests_path": "SKY_RASCACIELOS/synemu_lab/chaos_tests/"
+    },
+    "5_service_mesh_gateway": {
+      "core_gateway": "NULOGIC_CORE",
+      "port": 8000,
+      "cors_policy": "Universal Sovereign"
+    }
+  }
+}

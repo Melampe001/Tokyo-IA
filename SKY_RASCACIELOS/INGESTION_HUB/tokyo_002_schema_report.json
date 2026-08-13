@@ -1,0 +1,13 @@
+{
+  "file_name": "Tokyo_002.db",
+  "format": "SQLite format 3",
+  "status": "Ingested & Parsed",
+  "tables": {
+    "flow": {
+      "columns": {
+        "val": "REAL",
+        "ts": "TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    }
+  }
+}

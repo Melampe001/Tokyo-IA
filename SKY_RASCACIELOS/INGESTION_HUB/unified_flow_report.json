@@ -1,0 +1,13 @@
+{
+    "metrics_summary":  {
+                            "sync_status":  "Fully Integrated into SSoT",
+                            "total_sources":  2
+                        },
+    "execution_status":  "Success",
+    "sources_merged":  [
+                           "Tokyo_001.db",
+                           "Tokyo_002.db"
+                       ],
+    "unified_timestamp":  "2026-08-12 16:51:24",
+    "table_schema":  "flow (val REAL, ts TIMESTAMP)"
+}

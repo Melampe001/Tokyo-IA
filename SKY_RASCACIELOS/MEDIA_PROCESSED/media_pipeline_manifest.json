@@ -1,0 +1,21 @@
+{
+    "processed_assets":  [
+                             {
+                                 "marketing_bridge":  "Linked to Sector 4",
+                                 "name":  "media_asset_sample_01.mp4",
+                                 "ssot_sync":  "Verified",
+                                 "type":  "Video/Media Container",
+                                 "resolution":  "1080p_adaptive"
+                             }
+                         ],
+    "status":  "Active \u0026 Standardized",
+    "timestamp":  "2026-08-12 17:04:15",
+    "pipeline":  "Media Tríada (Ingesta -\u003e Normalización -\u003e Distribución)",
+    "supported_formats":  [
+                              "*.png",
+                              "*.jpg",
+                              "*.mp4",
+                              "*.mov",
+                              "*.webp"
+                          ]
+}

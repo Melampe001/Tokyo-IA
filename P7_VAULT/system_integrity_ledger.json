@@ -1,0 +1,26 @@
+﻿[
+    {
+        "FileName":  "svchost.exe",
+        "SHA256":  "B0B36BFF7AE4057F687D839CD4B3D81159AB646F1EE1B22106A927E93DECBB61",
+        "Version":  "10.0.19041.4522",
+        "Status":  "Valid"
+    },
+    {
+        "FileName":  "services.exe",
+        "SHA256":  "4A912DC98C977788131AAD0AE468D86792211ED225F80B2C344A3690B4437428",
+        "Version":  "10.0.19041.4522",
+        "Status":  "Valid"
+    },
+    {
+        "FileName":  "schtasks.exe",
+        "SHA256":  "2327E073DCF25AE03DC851EA0F3414980D3168FA959F42C5F77BE1381AE6C41D",
+        "Version":  "10.0.19041.4522",
+        "Status":  "Valid"
+    },
+    {
+        "FileName":  "smartscreen.exe",
+        "SHA256":  "3DA437B642468EAFAB7CD1B9DCF2CDF838B44C63FD73DAE8E3E4D06EC187C0F3",
+        "Version":  "10.0.19041.5848",
+        "Status":  "Valid"
+    }
+]
